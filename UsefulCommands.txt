@@ -1,0 +1,14 @@
+Commands:
+
+# Queries a FindBugs analysis file for total milliseconds, by name of Profiler
+xmllint --xpath "/FindBugsProfile/ClassProfile/@name|ClassProfile/@totalMilliseconds" $inputxml > all_totals.txt
+
+# Takes a file "all_totals.txt" and strips out the XML parts of it, i.e. foo="bar" becomes bar
+sed -e 's/"//g' all_totals.txt | sed -e 's/name=//g' | sed -e 's/totalMilliseconds=//g' | sort > all_totals_sorted_by_name.txt 
+
+# Takes a file with format where each line is [profile_name time_in_ms] (e.g. "some.profile.Name 123") and
+#   calculates total for each distinct profile_name
+./group_timings.py all_totals_sorted_by_name.txt 
+
+# Takes some format as above, but outputs total time across all profile_names
+./total_time_accounted_for.py all_totals_sorted_by_name.txt
