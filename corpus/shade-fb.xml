@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1-dev-20120816-r-1" sequence="1" timestamp="1359220263015" analysisTimestamp="1359220246558" release="">
+  <Project projectName="Shade">
+    <Jar>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/bin</Jar>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/jogg-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/jorbis-0.0.15.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/lwjgl.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/slick.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/crash.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/slickfx.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/BareBonesBrowserLaunch.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/lib/ibxm.jar</AuxClasspathEntry>
+    <SrcDir>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/src</SrcDir>
+    <SrcDir>/home/graham/dev/source/findbugs/successfactors/Corpus/aschearer-shade/res</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.controls.GameSlice">
+      <SourceLine classname="com.shade.controls.GameSlice" sourcefile="GameSlice.java" sourcepath="com/shade/controls/GameSlice.java"/>
+    </Class>
+    <Method classname="com.shade.controls.GameSlice" name="randomEntity" signature="()Lcom/shade/lighting/LuminousEntity;" isStatic="false">
+      <SourceLine classname="com.shade.controls.GameSlice" start="97" end="109" startBytecode="0" endBytecode="227" sourcefile="GameSlice.java" sourcepath="com/shade/controls/GameSlice.java"/>
+    </Method>
+    <SourceLine classname="com.shade.controls.GameSlice" start="98" end="98" startBytecode="22" endBytecode="22" sourcefile="GameSlice.java" sourcepath="com/shade/controls/GameSlice.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_COMPARISON" priority="2" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.controls.InstructionImage">
+      <SourceLine classname="com.shade.controls.InstructionImage" sourcefile="InstructionImage.java" sourcepath="com/shade/controls/InstructionImage.java"/>
+    </Class>
+    <Method classname="com.shade.controls.InstructionImage" name="update" signature="(Lorg/newdawn/slick/state/StateBasedGame;I)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.InstructionImage" start="52" end="71" startBytecode="0" endBytecode="281" sourcefile="InstructionImage.java" sourcepath="com/shade/controls/InstructionImage.java"/>
+    </Method>
+    <Field classname="com.shade.controls.InstructionImage" name="hideTime" signature="I" isStatic="false">
+      <SourceLine classname="com.shade.controls.InstructionImage" sourcefile="InstructionImage.java" sourcepath="com/shade/controls/InstructionImage.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.InstructionImage" start="54" end="54" startBytecode="28" endBytecode="28" sourcefile="InstructionImage.java" sourcepath="com/shade/controls/InstructionImage.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_COMPARISON" priority="2" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.controls.InstructionText">
+      <SourceLine classname="com.shade.controls.InstructionText" sourcefile="InstructionText.java" sourcepath="com/shade/controls/InstructionText.java"/>
+    </Class>
+    <Method classname="com.shade.controls.InstructionText" name="update" signature="(Lorg/newdawn/slick/state/StateBasedGame;I)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.InstructionText" start="53" end="72" startBytecode="0" endBytecode="281" sourcefile="InstructionText.java" sourcepath="com/shade/controls/InstructionText.java"/>
+    </Method>
+    <Field classname="com.shade.controls.InstructionText" name="hideTime" signature="I" isStatic="false">
+      <SourceLine classname="com.shade.controls.InstructionText" sourcefile="InstructionText.java" sourcepath="com/shade/controls/InstructionText.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.InstructionText" start="55" end="55" startBytecode="28" endBytecode="28" sourcefile="InstructionText.java" sourcepath="com/shade/controls/InstructionText.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="com.shade.controls.MeterControl">
+      <SourceLine classname="com.shade.controls.MeterControl" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Class>
+    <Method classname="com.shade.controls.MeterControl" name="&lt;init&gt;" signature="(FF)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.MeterControl" start="60" end="69" startBytecode="0" endBytecode="142" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Method>
+    <Field classname="com.shade.controls.MeterControl" name="current" signature="Lorg/newdawn/slick/Image;" isStatic="true">
+      <SourceLine classname="com.shade.controls.MeterControl" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.MeterControl" start="68" end="68" startBytecode="41" endBytecode="41" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.controls.MeterControl">
+      <SourceLine classname="com.shade.controls.MeterControl" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Class>
+    <Field classname="com.shade.controls.MeterControl" name="listener" signature="Lcom/shade/controls/ControlListener;" isStatic="false">
+      <SourceLine classname="com.shade.controls.MeterControl" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.MeterControl" start="80" end="80" startBytecode="2" endBytecode="2" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.controls.MeterControl">
+      <SourceLine classname="com.shade.controls.MeterControl" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Class>
+    <Field classname="com.shade.controls.MeterControl" name="dangerTimer" signature="I" isStatic="false">
+      <SourceLine classname="com.shade.controls.MeterControl" start="44" end="44" startBytecode="0" endBytecode="0" sourcefile="MeterControl.java" sourcepath="com/shade/controls/MeterControl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.controls.ScrollingText">
+      <SourceLine classname="com.shade.controls.ScrollingText" sourcefile="ScrollingText.java" sourcepath="com/shade/controls/ScrollingText.java"/>
+    </Class>
+    <Method classname="com.shade.controls.ScrollingText" name="update" signature="(Lorg/newdawn/slick/state/StateBasedGame;I)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.ScrollingText" start="43" end="55" startBytecode="0" endBytecode="215" sourcefile="ScrollingText.java" sourcepath="com/shade/controls/ScrollingText.java"/>
+    </Method>
+    <SourceLine classname="com.shade.controls.ScrollingText" start="44" end="44" startBytecode="31" endBytecode="31" sourcefile="ScrollingText.java" sourcepath="com/shade/controls/ScrollingText.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="com.shade.controls.text.AnImage">
+      <SourceLine classname="com.shade.controls.text.AnImage" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Class>
+    <Method classname="com.shade.controls.text.AnImage" name="nudge" signature="(FF)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.text.AnImage" start="69" end="71" startBytecode="0" endBytecode="8" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Method>
+    <LocalVariable name="x" register="1" pc="4" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="com.shade.controls.text.AnImage" name="x" signature="F" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="com.shade.controls.text.AnImage" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.text.AnImage" start="69" end="69" startBytecode="3" endBytecode="3" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="x"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="com.shade.controls.text.AnImage">
+      <SourceLine classname="com.shade.controls.text.AnImage" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Class>
+    <Method classname="com.shade.controls.text.AnImage" name="nudge" signature="(FF)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.text.AnImage" start="69" end="71" startBytecode="0" endBytecode="8" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Method>
+    <LocalVariable name="y" register="2" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="com.shade.controls.text.AnImage" name="y" signature="F" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="com.shade.controls.text.AnImage" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.text.AnImage" start="70" end="70" startBytecode="7" endBytecode="7" sourcefile="AnImage.java" sourcepath="com/shade/controls/text/AnImage.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="y"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="com.shade.controls.text.Text">
+      <SourceLine classname="com.shade.controls.text.Text" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Class>
+    <Method classname="com.shade.controls.text.Text" name="nudge" signature="(FF)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.text.Text" start="92" end="94" startBytecode="0" endBytecode="8" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Method>
+    <LocalVariable name="x" register="1" pc="4" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="com.shade.controls.text.Text" name="x" signature="F" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="com.shade.controls.text.Text" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.text.Text" start="92" end="92" startBytecode="3" endBytecode="3" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="x"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="com.shade.controls.text.Text">
+      <SourceLine classname="com.shade.controls.text.Text" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Class>
+    <Method classname="com.shade.controls.text.Text" name="nudge" signature="(FF)V" isStatic="false">
+      <SourceLine classname="com.shade.controls.text.Text" start="92" end="94" startBytecode="0" endBytecode="8" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Method>
+    <LocalVariable name="y" register="2" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="com.shade.controls.text.Text" name="y" signature="F" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="com.shade.controls.text.Text" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    </Field>
+    <SourceLine classname="com.shade.controls.text.Text" start="93" end="93" startBytecode="7" endBytecode="7" sourcefile="Text.java" sourcepath="com/shade/controls/text/Text.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="y"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.Basket">
+      <SourceLine classname="com.shade.entities.Basket" sourcefile="Basket.java" sourcepath="com/shade/entities/Basket.java"/>
+    </Class>
+    <Method classname="com.shade.entities.Basket" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Basket" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Basket.java" sourcepath="com/shade/entities/Basket.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.Dummy">
+      <SourceLine classname="com.shade.entities.Dummy" sourcefile="Dummy.java" sourcepath="com/shade/entities/Dummy.java"/>
+    </Class>
+    <Method classname="com.shade.entities.Dummy" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Dummy" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Dummy.java" sourcepath="com/shade/entities/Dummy.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.Obstacle">
+      <SourceLine classname="com.shade.entities.Obstacle" sourcefile="Obstacle.java" sourcepath="com/shade/entities/Obstacle.java"/>
+    </Class>
+    <Field classname="com.shade.entities.Obstacle" name="maxRank" signature="I" isStatic="true">
+      <SourceLine classname="com.shade.entities.Obstacle" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="Obstacle.java" sourcepath="com/shade/entities/Obstacle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.Player">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Class>
+    <Method classname="com.shade.entities.Player" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Player" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.entities.Player">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Class>
+    <Field classname="com.shade.entities.Player" name="luminosity" signature="F" isStatic="false">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.Player" start="317" end="317" startBytecode="2" endBytecode="2" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UrF" category="STYLE" first="1">
+    <Class classname="com.shade.entities.Player">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Class>
+    <Field classname="com.shade.entities.Player" name="flipthreshold" signature="I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.Player" start="53" end="53" startBytecode="31" endBytecode="31" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="com.shade.entities.Player">
+      <SourceLine classname="com.shade.entities.Player" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Class>
+    <Field classname="com.shade.entities.Player" name="flipper" signature="I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Player" start="43" end="43" startBytecode="0" endBytecode="0" sourcefile="Player.java" sourcepath="com/shade/entities/Player.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.SandPit">
+      <SourceLine classname="com.shade.entities.SandPit" sourcefile="SandPit.java" sourcepath="com/shade/entities/SandPit.java"/>
+    </Class>
+    <Method classname="com.shade.entities.SandPit" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.SandPit" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="SandPit.java" sourcepath="com/shade/entities/SandPit.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.TransparentDoor">
+      <SourceLine classname="com.shade.entities.TransparentDoor" sourcefile="TransparentDoor.java" sourcepath="com/shade/entities/TransparentDoor.java"/>
+    </Class>
+    <Method classname="com.shade.entities.TransparentDoor" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.TransparentDoor" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="TransparentDoor.java" sourcepath="com/shade/entities/TransparentDoor.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.Umbrella">
+      <SourceLine classname="com.shade.entities.Umbrella" sourcefile="Umbrella.java" sourcepath="com/shade/entities/Umbrella.java"/>
+    </Class>
+    <Method classname="com.shade.entities.Umbrella" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.Umbrella" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Umbrella.java" sourcepath="com/shade/entities/Umbrella.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.bird.Bird">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Class>
+    <Method classname="com.shade.entities.bird.Bird" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.bird.Bird" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.bird.Bird">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Class>
+    <Field classname="com.shade.entities.bird.Bird" name="alert" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.bird.Bird" start="55" end="55" startBytecode="9" endBytecode="9" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.bird.Bird">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Class>
+    <Field classname="com.shade.entities.bird.Bird" name="attack" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.bird.Bird" start="56" end="56" startBytecode="21" endBytecode="21" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="com.shade.entities.bird.Bird">
+      <SourceLine classname="com.shade.entities.bird.Bird" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Class>
+    <Field classname="com.shade.entities.bird.Bird" name="target" signature="Lcom/shade/entities/mushroom/Mushroom;" isStatic="false">
+      <SourceLine classname="com.shade.entities.bird.Bird" start="43" end="43" startBytecode="0" endBytecode="0" sourcefile="Bird.java" sourcepath="com/shade/entities/bird/Bird.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.mole.Hole">
+      <SourceLine classname="com.shade.entities.mole.Hole" sourcefile="Hole.java" sourcepath="com/shade/entities/mole/Hole.java"/>
+    </Class>
+    <Method classname="com.shade.entities.mole.Hole" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.mole.Hole" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Hole.java" sourcepath="com/shade/entities/mole/Hole.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.mole.Mole">
+      <SourceLine classname="com.shade.entities.mole.Mole" sourcefile="Mole.java" sourcepath="com/shade/entities/mole/Mole.java"/>
+    </Class>
+    <Method classname="com.shade.entities.mole.Mole" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.mole.Mole" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Mole.java" sourcepath="com/shade/entities/mole/Mole.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.monster.Monster">
+      <SourceLine classname="com.shade.entities.monster.Monster" sourcefile="Monster.java" sourcepath="com/shade/entities/monster/Monster.java"/>
+    </Class>
+    <Method classname="com.shade.entities.monster.Monster" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.monster.Monster" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Monster.java" sourcepath="com/shade/entities/monster/Monster.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="com.shade.entities.monster.Monster">
+      <SourceLine classname="com.shade.entities.monster.Monster" sourcefile="Monster.java" sourcepath="com/shade/entities/monster/Monster.java"/>
+    </Class>
+    <Field classname="com.shade.entities.monster.Monster" name="target" signature="Lcom/shade/entities/mushroom/Mushroom;" isStatic="false">
+      <SourceLine classname="com.shade.entities.monster.Monster" start="38" end="38" startBytecode="0" endBytecode="0" sourcefile="Monster.java" sourcepath="com/shade/entities/monster/Monster.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.entities.mushroom.Mushroom">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Class>
+    <Method classname="com.shade.entities.mushroom.Mushroom" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" start="1" end="1" startBytecode="0" endBytecode="40" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.mushroom.Mushroom">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Class>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="collected" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.mushroom.Mushroom" start="58" end="58" startBytecode="61" endBytecode="61" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.mushroom.Mushroom">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Class>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="picked" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.mushroom.Mushroom" start="56" end="56" startBytecode="37" endBytecode="37" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.mushroom.Mushroom">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Class>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="poisonPicked" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.mushroom.Mushroom" start="57" end="57" startBytecode="49" endBytecode="49" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.mushroom.Mushroom">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Class>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="spawning" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.mushroom.Mushroom" start="55" end="55" startBytecode="25" endBytecode="25" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.entities.mushroom.MushroomFactory">
+      <SourceLine classname="com.shade.entities.mushroom.MushroomFactory" sourcefile="MushroomFactory.java" sourcepath="com/shade/entities/mushroom/MushroomFactory.java"/>
+    </Class>
+    <Method classname="com.shade.entities.mushroom.MushroomFactory" name="nextType" signature="()I" isStatic="false">
+      <SourceLine classname="com.shade.entities.mushroom.MushroomFactory" start="143" end="153" startBytecode="0" endBytecode="210" sourcefile="MushroomFactory.java" sourcepath="com/shade/entities/mushroom/MushroomFactory.java"/>
+    </Method>
+    <SourceLine classname="com.shade.entities.mushroom.MushroomFactory" start="146" end="146" startBytecode="25" endBytecode="25" sourcefile="MushroomFactory.java" sourcepath="com/shade/entities/mushroom/MushroomFactory.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.entities.mushroom.MushroomFactory$MushroomFactoryException">
+      <SourceLine classname="com.shade.entities.mushroom.MushroomFactory$MushroomFactoryException" start="175" end="177" sourcefile="MushroomFactory.java" sourcepath="com/shade/entities/mushroom/MushroomFactory.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.entities.treasure.ReturningTreasure">
+      <SourceLine classname="com.shade.entities.treasure.ReturningTreasure" sourcefile="ReturningTreasure.java" sourcepath="com/shade/entities/treasure/ReturningTreasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.ReturningTreasure" name="clear" signature="Z" isStatic="false">
+      <SourceLine classname="com.shade.entities.treasure.ReturningTreasure" sourcefile="ReturningTreasure.java" sourcepath="com/shade/entities/treasure/ReturningTreasure.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.treasure.ReturningTreasure" start="29" end="29" startBytecode="7" endBytecode="7" sourcefile="ReturningTreasure.java" sourcepath="com/shade/entities/treasure/ReturningTreasure.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Method classname="com.shade.entities.treasure.Treasure" name="goHome" signature="()V" isStatic="false">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="138" end="140" startBytecode="0" endBytecode="102" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Method>
+    <SourceLine classname="com.shade.entities.treasure.Treasure" start="138" end="138" startBytecode="13" endBytecode="13" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Method classname="com.shade.entities.treasure.Treasure" name="goHome" signature="()V" isStatic="false">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="138" end="140" startBytecode="0" endBytecode="102" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Method>
+    <SourceLine classname="com.shade.entities.treasure.Treasure" start="139" end="139" startBytecode="35" endBytecode="35" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+  </BugInstance>
+  <BugInstance type="MF_CLASS_MASKS_FIELD" priority="1" abbrev="MF" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="level" signature="Lcom/shade/crash/CrashLevel;" isStatic="false" role="FIELD_MASKING">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="57" end="57" startBytecode="0" endBytecode="0" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="level" signature="Lcom/shade/crash/CrashLevel;" isStatic="false" role="FIELD_MASKED">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MF_CLASS_MASKS_FIELD" priority="1" abbrev="MF" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="manager" signature="Lcom/shade/base/util/StateManager;" isStatic="false" role="FIELD_MASKING">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="52" end="52" startBytecode="0" endBytecode="0" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="manager" signature="Lcom/shade/base/util/StateManager;" isStatic="false" role="FIELD_MASKED">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MF_CLASS_MASKS_FIELD" priority="1" abbrev="MF" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="scale" signature="F" isStatic="false" role="FIELD_MASKING">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="53" end="53" startBytecode="0" endBytecode="0" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <Field classname="com.shade.entities.mushroom.Mushroom" name="scale" signature="F" isStatic="false" role="FIELD_MASKED">
+      <SourceLine classname="com.shade.entities.mushroom.Mushroom" sourcefile="Mushroom.java" sourcepath="com/shade/entities/mushroom/Mushroom.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="collected" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.treasure.Treasure" start="72" end="72" startBytecode="77" endBytecode="77" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="picked" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.treasure.Treasure" start="70" end="70" startBytecode="53" endBytecode="53" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="poisonPicked" signature="Lorg/newdawn/slick/Sound;" isStatic="true">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+    <SourceLine classname="com.shade.entities.treasure.Treasure" start="71" end="71" startBytecode="65" endBytecode="65" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.entities.treasure.Treasure">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Class>
+    <Field classname="com.shade.entities.treasure.Treasure" name="type" signature="Lcom/shade/entities/treasure/Treasure$Types;" isStatic="false">
+      <SourceLine classname="com.shade.entities.treasure.Treasure" start="55" end="55" startBytecode="0" endBytecode="0" sourcefile="Treasure.java" sourcepath="com/shade/entities/treasure/Treasure.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.entities.util.MoleFactory$MoleFactoryException">
+      <SourceLine classname="com.shade.entities.util.MoleFactory$MoleFactoryException" start="72" end="74" sourcefile="MoleFactory.java" sourcepath="com/shade/entities/util/MoleFactory.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.entities.util.Sizz">
+      <SourceLine classname="com.shade.entities.util.Sizz" sourcefile="Sizz.java" sourcepath="com/shade/entities/util/Sizz.java"/>
+    </Class>
+    <Method classname="com.shade.entities.util.Sizz" name="draw" signature="()V" isStatic="false">
+      <SourceLine classname="com.shade.entities.util.Sizz" start="36" end="40" startBytecode="0" endBytecode="160" sourcefile="Sizz.java" sourcepath="com/shade/entities/util/Sizz.java"/>
+    </Method>
+    <SourceLine classname="com.shade.entities.util.Sizz" start="37" end="37" startBytecode="42" endBytecode="42" sourcefile="Sizz.java" sourcepath="com/shade/entities/util/Sizz.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.entities.util.Sparkler$Sparkle">
+      <SourceLine classname="com.shade.entities.util.Sparkler$Sparkle" sourcefile="Sparkler.java" sourcepath="com/shade/entities/util/Sparkler.java"/>
+    </Class>
+    <Method classname="com.shade.entities.util.Sparkler$Sparkle" name="draw" signature="()V" isStatic="false">
+      <SourceLine classname="com.shade.entities.util.Sparkler$Sparkle" start="87" end="91" startBytecode="0" endBytecode="129" sourcefile="Sparkler.java" sourcepath="com/shade/entities/util/Sparkler.java"/>
+    </Method>
+    <SourceLine classname="com.shade.entities.util.Sparkler$Sparkle" start="88" end="88" startBytecode="29" endBytecode="29" sourcefile="Sparkler.java" sourcepath="com/shade/entities/util/Sparkler.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.score.BatchWriter">
+      <SourceLine classname="com.shade.score.BatchWriter" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.BatchWriter" name="write" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.score.BatchWriter" start="27" end="49" startBytecode="0" endBytecode="427" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="146" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.BatchWriter" start="45" end="45" startBytecode="139" endBytecode="139" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.score.BatchWriter">
+      <SourceLine classname="com.shade.score.BatchWriter" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.BatchWriter" name="write" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.score.BatchWriter" start="27" end="49" startBytecode="0" endBytecode="427" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="146" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.BatchWriter" start="38" end="38" startBytecode="105" endBytecode="105" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" abbrev="NP" category="STYLE" first="1">
+    <Class classname="com.shade.score.BatchWriter">
+      <SourceLine classname="com.shade.score.BatchWriter" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.BatchWriter" name="write" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.score.BatchWriter" start="27" end="49" startBytecode="0" endBytecode="427" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Method>
+    <LocalVariable name="response" register="8" pc="156" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.shade.score.BatchWriter" start="47" end="47" startBytecode="158" endBytecode="158" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.score.BatchWriter">
+      <SourceLine classname="com.shade.score.BatchWriter" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.BatchWriter" name="write" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.score.BatchWriter" start="27" end="49" startBytecode="0" endBytecode="78" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="com.shade.score.BatchWriter" start="44" end="44" startBytecode="126" endBytecode="126" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="com.shade.score.BatchWriter">
+      <SourceLine classname="com.shade.score.BatchWriter" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.BatchWriter" name="write" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.score.BatchWriter" start="27" end="49" startBytecode="0" endBytecode="427" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.BatchWriter" start="48" end="48" startBytecode="162" endBytecode="162" sourcefile="BatchWriter.java" sourcepath="com/shade/score/BatchWriter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreReader">
+      <SourceLine classname="com.shade.score.RemoteHighScoreReader" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreReader" name="getScores" signature="(II)[[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreReader" start="29" end="52" startBytecode="0" endBytecode="516" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="146" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.RemoteHighScoreReader" start="37" end="37" startBytecode="121" endBytecode="121" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreReader">
+      <SourceLine classname="com.shade.score.RemoteHighScoreReader" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreReader" name="getScores" signature="(II)[[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreReader" start="29" end="52" startBytecode="0" endBytecode="516" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.RemoteHighScoreReader" start="51" end="51" startBytecode="216" endBytecode="216" sourcefile="RemoteHighScoreReader.java" sourcepath="com/shade/score/RemoteHighScoreReader.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreWriter">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="25" end="45" startBytecode="0" endBytecode="452" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="146" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="40" end="40" startBytecode="180" endBytecode="180" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreWriter">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="25" end="45" startBytecode="0" endBytecode="452" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="146" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="33" end="33" startBytecode="145" endBytecode="145" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" abbrev="NP" category="STYLE" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreWriter">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="25" end="45" startBytecode="0" endBytecode="452" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Method>
+    <LocalVariable name="response" register="10" pc="197" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="42" end="42" startBytecode="199" endBytecode="199" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreWriter">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="25" end="45" startBytecode="0" endBytecode="89" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="39" end="39" startBytecode="167" endBytecode="167" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" first="1">
+    <Class classname="com.shade.score.RemoteHighScoreWriter">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Class>
+    <Method classname="com.shade.score.RemoteHighScoreWriter" name="write" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="25" end="45" startBytecode="0" endBytecode="452" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+    </Method>
+    <SourceLine classname="com.shade.score.RemoteHighScoreWriter" start="44" end="44" startBytecode="203" endBytecode="203" sourcefile="RemoteHighScoreWriter.java" sourcepath="com/shade/score/RemoteHighScoreWriter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.states.CreditState">
+      <SourceLine classname="com.shade.states.CreditState" sourcefile="CreditState.java" sourcepath="com/shade/states/CreditState.java"/>
+    </Class>
+    <Method classname="com.shade.states.CreditState" name="initCredits" signature="(Lorg/newdawn/slick/TrueTypeFont;)V" isStatic="false">
+      <SourceLine classname="com.shade.states.CreditState" start="145" end="158" startBytecode="0" endBytecode="296" sourcefile="CreditState.java" sourcepath="com/shade/states/CreditState.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="com.shade.states.CreditState" start="146" end="146" startBytecode="20" endBytecode="20" sourcefile="CreditState.java" sourcepath="com/shade/states/CreditState.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.states.InstructionState">
+      <SourceLine classname="com.shade.states.InstructionState" sourcefile="InstructionState.java" sourcepath="com/shade/states/InstructionState.java"/>
+    </Class>
+    <Method classname="com.shade.states.InstructionState" name="initInstructions" signature="(Lorg/newdawn/slick/TrueTypeFont;)V" isStatic="false">
+      <SourceLine classname="com.shade.states.InstructionState" start="197" end="218" startBytecode="0" endBytecode="398" sourcefile="InstructionState.java" sourcepath="com/shade/states/InstructionState.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="com.shade.states.InstructionState" start="198" end="198" startBytecode="22" endBytecode="22" sourcefile="InstructionState.java" sourcepath="com/shade/states/InstructionState.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.states.InstructionState$InstructionSet">
+      <SourceLine classname="com.shade.states.InstructionState$InstructionSet" start="227" end="302" sourcefile="InstructionState.java" sourcepath="com/shade/states/InstructionState.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="com.shade.states.RecapState">
+      <SourceLine classname="com.shade.states.RecapState" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+    </Class>
+    <Method classname="com.shade.states.RecapState" name="drawCentered" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.shade.states.RecapState" start="173" end="175" startBytecode="0" endBytecode="104" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+    </Method>
+    <SourceLine classname="com.shade.states.RecapState" start="173" end="173" startBytecode="13" endBytecode="13" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.states.RecapState">
+      <SourceLine classname="com.shade.states.RecapState" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+    </Class>
+    <Field classname="com.shade.states.RecapState" name="game" signature="Lorg/newdawn/slick/state/StateBasedGame;" isStatic="false">
+      <SourceLine classname="com.shade.states.RecapState" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+    </Field>
+    <SourceLine classname="com.shade.states.RecapState" start="98" end="98" startBytecode="2" endBytecode="2" sourcefile="RecapState.java" sourcepath="com/shade/states/RecapState.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.states.SelectState">
+      <SourceLine classname="com.shade.states.SelectState" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+    </Class>
+    <Method classname="com.shade.states.SelectState" name="initLevels" signature="(Lorg/newdawn/slick/TrueTypeFont;)V" isStatic="false">
+      <SourceLine classname="com.shade.states.SelectState" start="247" end="279" startBytecode="0" endBytecode="567" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="com.shade.states.SelectState" start="247" end="247" startBytecode="10" endBytecode="10" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.shade.states.SelectState">
+      <SourceLine classname="com.shade.states.SelectState" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+    </Class>
+    <Method classname="com.shade.states.SelectState" name="initLevels" signature="(Lorg/newdawn/slick/TrueTypeFont;)V" isStatic="false">
+      <SourceLine classname="com.shade.states.SelectState" start="247" end="279" startBytecode="0" endBytecode="567" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="com.shade.states.SelectState" start="250" end="250" startBytecode="35" endBytecode="35" sourcefile="SelectState.java" sourcepath="com/shade/states/SelectState.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader">
+      <SourceLine classname="com.shade.util.CsvReader" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Method classname="com.shade.util.CsvReader" name="readHeaders" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader" start="1227" end="1251" startBytecode="0" endBytecode="238" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="com.shade.util.CsvReader" start="1242" end="1242" startBytecode="64" endBytecode="64" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader">
+      <SourceLine classname="com.shade.util.CsvReader" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Method classname="com.shade.util.CsvReader" name="setHeaders" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader" start="499" end="513" startBytecode="0" endBytecode="192" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="69" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="com.shade.util.CsvReader" start="511" end="511" startBytecode="62" endBytecode="62" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="1" abbrev="RpC" category="CORRECTNESS" first="1">
+    <Class classname="com.shade.util.CsvReader">
+      <SourceLine classname="com.shade.util.CsvReader" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Method classname="com.shade.util.CsvReader" name="endColumn" signature="()V" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader" start="1296" end="1377" startBytecode="0" endBytecode="776" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.util.CsvReader" start="1322" end="1322" startBytecode="186" endBytecode="196" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    <SourceLine classname="com.shade.util.CsvReader" start="1322" end="1322" startBytecode="200" endBytecode="210" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" abbrev="SF" category="STYLE" first="1">
+    <Class classname="com.shade.util.CsvReader">
+      <SourceLine classname="com.shade.util.CsvReader" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Method classname="com.shade.util.CsvReader" name="readRecord" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader" start="587" end="1153" startBytecode="0" endBytecode="4494" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.util.CsvReader" start="664" end="697" startBytecode="332" endBytecode="482" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" abbrev="SF" category="STYLE" first="1">
+    <Class classname="com.shade.util.CsvReader">
+      <SourceLine classname="com.shade.util.CsvReader" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Method classname="com.shade.util.CsvReader" name="readRecord" signature="()Z" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader" start="587" end="1153" startBytecode="0" endBytecode="4494" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Method>
+    <SourceLine classname="com.shade.util.CsvReader" start="945" end="978" startBytecode="1705" endBytecode="1850" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$ColumnBuffer">
+      <SourceLine classname="com.shade.util.CsvReader$ColumnBuffer" start="1658" end="1661" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$ComplexEscape">
+      <SourceLine classname="com.shade.util.CsvReader$ComplexEscape" start="1600" end="1600" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$DataBuffer">
+      <SourceLine classname="com.shade.util.CsvReader$DataBuffer" start="1644" end="1650" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$HeadersHolder">
+      <SourceLine classname="com.shade.util.CsvReader$HeadersHolder" start="1756" end="1760" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$Letters">
+      <SourceLine classname="com.shade.util.CsvReader$Letters" start="1676" end="1676" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$RawRecordBuffer">
+      <SourceLine classname="com.shade.util.CsvReader$RawRecordBuffer" start="1669" end="1673" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$StaticSettings">
+      <SourceLine classname="com.shade.util.CsvReader$StaticSettings" start="1763" end="1763" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvReader$UserSettings">
+      <SourceLine classname="com.shade.util.CsvReader$UserSettings" start="1733" end="1746" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" abbrev="UrF" category="STYLE" first="1">
+    <Class classname="com.shade.util.CsvReader$UserSettings">
+      <SourceLine classname="com.shade.util.CsvReader$UserSettings" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Class>
+    <Field classname="com.shade.util.CsvReader$UserSettings" name="CaseSensitive" signature="Z" isStatic="false">
+      <SourceLine classname="com.shade.util.CsvReader$UserSettings" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+    </Field>
+    <SourceLine classname="com.shade.util.CsvReader$UserSettings" start="1734" end="1734" startBytecode="11" endBytecode="11" sourcefile="CsvReader.java" sourcepath="com/shade/util/CsvReader.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvWriter$Letters">
+      <SourceLine classname="com.shade.util.CsvWriter$Letters" start="529" end="529" sourcefile="CsvWriter.java" sourcepath="com/shade/util/CsvWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.shade.util.CsvWriter$UserSettings">
+      <SourceLine classname="com.shade.util.CsvWriter$UserSettings" start="566" end="574" sourcefile="CsvWriter.java" sourcepath="com/shade/util/CsvWriter.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 26 Jan 2013 15:33:51 +0000" total_classes="202" referenced_classes="330" total_bugs="84" total_size="8624" num_packages="19" vm_version="23.2-b09" cpu_seconds="870.14" clock_seconds="3243.39" peak_mbytes="1224.32" alloc_mbytes="924.00" gc_seconds="304.86" priority_2="58" priority_1="26">
+    <PackageStats package="com.shade" total_bugs="0" total_types="1" total_size="27">
+      <ClassStats class="com.shade.Shade" sourceFile="Shade.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.base" total_bugs="0" total_types="3" total_size="17">
+      <ClassStats class="com.shade.base.Animatable" sourceFile="Animatable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.shade.base.Entity" sourceFile="Entity.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="com.shade.base.Level" sourceFile="Level.java" interface="true" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.base.util" total_bugs="0" total_types="2" total_size="39">
+      <ClassStats class="com.shade.base.util.State" sourceFile="State.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.shade.base.util.StateManager" sourceFile="StateManager.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.controls" total_bugs="7" total_types="29" total_size="1178" priority_2="7">
+      <ClassStats class="com.shade.controls.Button" sourceFile="Button.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.ClickListener" sourceFile="ClickListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.ControlListener" sourceFile="ControlListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.ControlSlice" sourceFile="ControlSlice.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.CounterControl" sourceFile="CounterControl.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="com.shade.controls.CounterControl$ScoreBubble" sourceFile="CounterControl.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.shade.controls.DayPhaseTimer" sourceFile="DayPhaseTimer.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.shade.controls.DayPhaseTimer$DayLightStatus" sourceFile="DayPhaseTimer.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.controls.FadeInImage" sourceFile="FadeInImage.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.shade.controls.FadeInImage$Status" sourceFile="FadeInImage.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.controls.FadeInText" sourceFile="FadeInText.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="com.shade.controls.FadeInText$Status" sourceFile="FadeInText.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.controls.GameSlice" sourceFile="GameSlice.java" interface="false" size="95" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.controls.InstructionImage" sourceFile="InstructionImage.java" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.controls.InstructionImage$State" sourceFile="InstructionImage.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.controls.InstructionText" sourceFile="InstructionText.java" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.controls.InstructionText$State" sourceFile="InstructionText.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.controls.KeyListener" sourceFile="KeyListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.LevelLock" sourceFile="LevelLock.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="com.shade.controls.MeterControl" sourceFile="MeterControl.java" interface="false" size="144" bugs="3" priority_2="3"/>
+      <ClassStats class="com.shade.controls.MushroomCounter" sourceFile="MushroomCounter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.controls.ScoreControl" sourceFile="ScoreControl.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="com.shade.controls.ScrollingText" sourceFile="ScrollingText.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.controls.ScrollingText$Status" sourceFile="ScrollingText.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.controls.SerialStats" sourceFile="SerialStats.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.shade.controls.SlickButton" sourceFile="SlickButton.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="com.shade.controls.StatMeter" sourceFile="StatMeter.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="com.shade.controls.StatsControl" sourceFile="StatsControl.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.shade.controls.TwoToneButton" sourceFile="TwoToneButton.java" interface="false" size="118" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.controls.text" total_bugs="4" total_types="6" total_size="192" priority_1="4">
+      <ClassStats class="com.shade.controls.text.AlphaText" sourceFile="AlphaText.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.shade.controls.text.AlphaText$State" sourceFile="AlphaText.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.controls.text.AnImage" sourceFile="AnImage.java" interface="false" size="39" bugs="2" priority_1="2"/>
+      <ClassStats class="com.shade.controls.text.FadeInText" sourceFile="FadeInText.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.shade.controls.text.FadeOutText" sourceFile="FadeOutText.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.shade.controls.text.Text" sourceFile="Text.java" interface="false" size="41" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <PackageStats package="com.shade.crash" total_bugs="0" total_types="5" total_size="107">
+      <ClassStats class="com.shade.crash.CrashGeom" sourceFile="CrashGeom.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.shade.crash.CrashLevel" sourceFile="CrashLevel.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="com.shade.crash.CrashLevel$1" sourceFile="CrashLevel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.crash.CrashLevel$2" sourceFile="CrashLevel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.crash.Repelable" sourceFile="Repelable.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities" total_bugs="10" total_types="22" total_size="1297" priority_2="10">
+      <ClassStats class="com.shade.entities.Basket" sourceFile="Basket.java" interface="false" size="61" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.Block" sourceFile="Block.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="com.shade.entities.Dome" sourceFile="Dome.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.shade.entities.Door" sourceFile="Door.java" interface="false" size="191" bugs="0"/>
+      <ClassStats class="com.shade.entities.Door$ActiveSide" sourceFile="Door.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.entities.Dummy" sourceFile="Dummy.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.Fence" sourceFile="Fence.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="com.shade.entities.Linkable" sourceFile="Linkable.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.shade.entities.MockPlayer" sourceFile="MockPlayer.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.entities.Obstacle" sourceFile="Obstacle.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.Player" sourceFile="Player.java" interface="false" size="142" bugs="4" priority_2="4"/>
+      <ClassStats class="com.shade.entities.Player$NormalState" sourceFile="Player.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="com.shade.entities.Player$PlayerState" sourceFile="Player.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.entities.Player$StunnedState" sourceFile="Player.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="com.shade.entities.Roles" sourceFile="Roles.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.shade.entities.SandPit" sourceFile="SandPit.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.Slider" sourceFile="Slider.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="com.shade.entities.Slider$ActiveDirection" sourceFile="Slider.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.entities.TransparentDoor" sourceFile="TransparentDoor.java" interface="false" size="181" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.TransparentDoor$ActiveSide" sourceFile="TransparentDoor.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.entities.TransparentFence" sourceFile="TransparentFence.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="com.shade.entities.Umbrella" sourceFile="Umbrella.java" interface="false" size="48" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.bird" total_bugs="4" total_types="6" total_size="354" priority_2="2" priority_1="2">
+      <ClassStats class="com.shade.entities.bird.AttackingBird" sourceFile="AttackingBird.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="com.shade.entities.bird.Bird" sourceFile="Bird.java" interface="false" size="116" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="com.shade.entities.bird.Bird$States" sourceFile="Bird.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.shade.entities.bird.ReturningBird" sourceFile="ReturningBird.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="com.shade.entities.bird.SleepingBird" sourceFile="SleepingBird.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.shade.entities.bird.WaitingBird" sourceFile="WaitingBird.java" interface="false" size="68" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.mole" total_bugs="2" total_types="7" total_size="301" priority_2="2">
+      <ClassStats class="com.shade.entities.mole.Hole" sourceFile="Hole.java" interface="false" size="44" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.mole.IdleMole" sourceFile="IdleMole.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.shade.entities.mole.Mole" sourceFile="Mole.java" interface="false" size="73" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.mole.Mole$States" sourceFile="Mole.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.entities.mole.SpawningMole" sourceFile="SpawningMole.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.shade.entities.mole.Util" sourceFile="Util.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.shade.entities.mole.WorkerMole" sourceFile="WorkerMole.java" interface="false" size="81" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.monster" total_bugs="2" total_types="8" total_size="394" priority_2="2">
+      <ClassStats class="com.shade.entities.monster.ChasingMonster" sourceFile="ChasingMonster.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.LostMonster" sourceFile="LostMonster.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.Monster" sourceFile="Monster.java" interface="false" size="102" bugs="2" priority_2="2"/>
+      <ClassStats class="com.shade.entities.monster.Monster$States" sourceFile="Monster.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.ProwlingMonster" sourceFile="ProwlingMonster.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.SleepingMonster" sourceFile="SleepingMonster.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.SniffingMonster" sourceFile="SniffingMonster.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="com.shade.entities.monster.WanderingMonster" sourceFile="WanderingMonster.java" interface="false" size="45" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.mushroom" total_bugs="7" total_types="11" total_size="525" priority_2="3" priority_1="4">
+      <ClassStats class="com.shade.entities.mushroom.CollectedShroom" sourceFile="CollectedShroom.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.FlyingShroom" sourceFile="FlyingShroom.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.Mushroom" sourceFile="Mushroom.java" interface="false" size="146" bugs="5" priority_2="1" priority_1="4"/>
+      <ClassStats class="com.shade.entities.mushroom.Mushroom$States" sourceFile="Mushroom.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.Mushroom$Types" sourceFile="Mushroom.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.MushroomFactory" sourceFile="MushroomFactory.java" interface="false" size="88" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.mushroom.MushroomFactory$MushroomFactoryException" sourceFile="MushroomFactory.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.mushroom.NormalShroom" sourceFile="NormalShroom.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.PickedShroom" sourceFile="PickedShroom.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.SpawningShroom" sourceFile="SpawningShroom.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.shade.entities.mushroom.WrappingUtils" sourceFile="WrappingUtils.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.treasure" total_bugs="10" total_types="9" total_size="499" priority_2="4" priority_1="6">
+      <ClassStats class="com.shade.entities.treasure.CollectedTreasure" sourceFile="CollectedTreasure.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.FlyingTreasure" sourceFile="FlyingTreasure.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.NormalTreasure" sourceFile="NormalTreasure.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.PickedTreasure" sourceFile="PickedTreasure.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.ReturningTreasure" sourceFile="ReturningTreasure.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.treasure.Treasure" sourceFile="Treasure.java" interface="false" size="218" bugs="9" priority_2="3" priority_1="6"/>
+      <ClassStats class="com.shade.entities.treasure.Treasure$States" sourceFile="Treasure.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.Treasure$Types" sourceFile="Treasure.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.entities.treasure.Util" sourceFile="Util.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.entities.util" total_bugs="3" total_types="6" total_size="235" priority_2="3">
+      <ClassStats class="com.shade.entities.util.MoleFactory" sourceFile="MoleFactory.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.shade.entities.util.MoleFactory$MoleFactoryException" sourceFile="MoleFactory.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.util.Sizz" sourceFile="Sizz.java" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.entities.util.Sizzle2" sourceFile="Sizzle2.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="com.shade.entities.util.Sparkler" sourceFile="Sparkler.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="com.shade.entities.util.Sparkler$Sparkle" sourceFile="Sparkler.java" interface="false" size="30" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.shade.levels" total_bugs="0" total_types="4" total_size="109">
+      <ClassStats class="com.shade.levels.LevelManager" sourceFile="LevelManager.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.shade.levels.LevelSerial" sourceFile="LevelSerial.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="com.shade.levels.Model" sourceFile="Model.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.levels.Shell" sourceFile="Shell.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.lighting" total_bugs="0" total_types="5" total_size="165">
+      <ClassStats class="com.shade.lighting.GlobalLight" sourceFile="GlobalLight.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.shade.lighting.LightMask" sourceFile="LightMask.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="com.shade.lighting.LightSource" sourceFile="LightSource.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.shade.lighting.LightSourceProxy" sourceFile="LightSourceProxy.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.shade.lighting.LuminousEntity" sourceFile="LuminousEntity.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.score" total_bugs="12" total_types="10" total_size="194" priority_2="7" priority_1="5">
+      <ClassStats class="com.shade.score.BatchWriter" sourceFile="BatchWriter.java" interface="false" size="30" bugs="5" priority_2="3" priority_1="2"/>
+      <ClassStats class="com.shade.score.FailSafeHighScoreReader" sourceFile="FailSafeHighScoreReader.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.shade.score.FailSafeHighScoreWriter" sourceFile="FailSafeHighScoreWriter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.shade.score.HighScoreReader" sourceFile="HighScoreReader.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.score.HighScoreWriter" sourceFile="HighScoreWriter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.shade.score.LocalHighScoreReader" sourceFile="LocalHighScoreReader.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.shade.score.LocalHighScoreReader$1" sourceFile="LocalHighScoreReader.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.score.LocalHighScoreWriter" sourceFile="LocalHighScoreWriter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.shade.score.RemoteHighScoreReader" sourceFile="RemoteHighScoreReader.java" interface="false" size="25" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="com.shade.score.RemoteHighScoreWriter" sourceFile="RemoteHighScoreWriter.java" interface="false" size="28" bugs="5" priority_2="3" priority_1="2"/>
+    </PackageStats>
+    <PackageStats package="com.shade.states" total_bugs="7" total_types="50" total_size="1783" priority_2="3" priority_1="4">
+      <ClassStats class="com.shade.states.CreditState" sourceFile="CreditState.java" interface="false" size="89" bugs="1" priority_1="1"/>
+      <ClassStats class="com.shade.states.CreditState$1" sourceFile="CreditState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.CreditState$2" sourceFile="CreditState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.CreditState$3" sourceFile="CreditState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.EnterScoreState" sourceFile="EnterScoreState.java" interface="false" size="121" bugs="0"/>
+      <ClassStats class="com.shade.states.EnterScoreState$1" sourceFile="EnterScoreState.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.shade.states.EnterScoreState$2" sourceFile="EnterScoreState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.EnterScoreState$3" sourceFile="EnterScoreState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.EnterScoreState$4" sourceFile="EnterScoreState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.HighscoreState" sourceFile="HighscoreState.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="com.shade.states.HighscoreState$1" sourceFile="HighscoreState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.HighscoreState$2" sourceFile="HighscoreState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.HighscoreState$3" sourceFile="HighscoreState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.InGameState" sourceFile="InGameState.java" interface="false" size="190" bugs="0"/>
+      <ClassStats class="com.shade.states.InGameState$1" sourceFile="InGameState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.InGameState$2" sourceFile="InGameState.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.shade.states.InGameState$3" sourceFile="InGameState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState" sourceFile="InstructionState.java" interface="false" size="120" bugs="1" priority_1="1"/>
+      <ClassStats class="com.shade.states.InstructionState$1" sourceFile="InstructionState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$2" sourceFile="InstructionState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$3" sourceFile="InstructionState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$4" sourceFile="InstructionState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$5" sourceFile="InstructionState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$6" sourceFile="InstructionState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.InstructionState$InstructionSet" sourceFile="InstructionState.java" interface="false" size="61" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.states.MasterState" sourceFile="MasterState.java" interface="false" size="88" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState" sourceFile="RecapState.java" interface="false" size="224" bugs="2" priority_2="2"/>
+      <ClassStats class="com.shade.states.RecapState$1" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$2" sourceFile="RecapState.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$3" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$4" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$5" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$6" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$7" sourceFile="RecapState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$InputGizmo" sourceFile="RecapState.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$InputGizmo$1" sourceFile="RecapState.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$ScoreGizmo" sourceFile="RecapState.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="com.shade.states.RecapState$StatGizmo" sourceFile="RecapState.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState" sourceFile="SelectState.java" interface="false" size="152" bugs="2" priority_1="2"/>
+      <ClassStats class="com.shade.states.SelectState$1" sourceFile="SelectState.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$2" sourceFile="SelectState.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$3" sourceFile="SelectState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$4" sourceFile="SelectState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$5" sourceFile="SelectState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$6" sourceFile="SelectState.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.shade.states.SelectState$LevelSet" sourceFile="SelectState.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="com.shade.states.TitleState" sourceFile="TitleState.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="com.shade.states.TitleState$1" sourceFile="TitleState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.TitleState$2" sourceFile="TitleState.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.states.TitleState$3" sourceFile="TitleState.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.states.util" total_bugs="0" total_types="2" total_size="83">
+      <ClassStats class="com.shade.states.util.BirdCalls" sourceFile="BirdCalls.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.shade.states.util.Dimmer" sourceFile="Dimmer.java" interface="false" size="65" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shade.util" total_bugs="16" total_types="16" total_size="1125" priority_2="15" priority_1="1">
+      <ClassStats class="com.shade.util.CsvReader" sourceFile="CsvReader.java" interface="false" size="708" bugs="5" priority_2="4" priority_1="1"/>
+      <ClassStats class="com.shade.util.CsvReader$ColumnBuffer" sourceFile="CsvReader.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$ComplexEscape" sourceFile="CsvReader.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$DataBuffer" sourceFile="CsvReader.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$HeadersHolder" sourceFile="CsvReader.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$Letters" sourceFile="CsvReader.java" interface="false" size="18" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$RawRecordBuffer" sourceFile="CsvReader.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$StaticSettings" sourceFile="CsvReader.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvReader$UserSettings" sourceFile="CsvReader.java" interface="false" size="29" bugs="2" priority_2="2"/>
+      <ClassStats class="com.shade.util.CsvWriter" sourceFile="CsvWriter.java" interface="false" size="217" bugs="0"/>
+      <ClassStats class="com.shade.util.CsvWriter$Letters" sourceFile="CsvWriter.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.CsvWriter$UserSettings" sourceFile="CsvWriter.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="com.shade.util.Geom" sourceFile="Geom.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.shade.util.LevelUtil" sourceFile="LevelUtil.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.shade.util.Reflection" sourceFile="Reflection.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.shade.util.ResourceManager" sourceFile="ResourceManager.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="2910" invocations="202" avgMicrosecondsPerInvocation="14407" maxMicrosecondsPerInvocation="2788961" standardDeviationMircosecondsPerInvocation="195707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1155" invocations="1023" avgMicrosecondsPerInvocation="1129" maxMicrosecondsPerInvocation="224164" standardDeviationMircosecondsPerInvocation="7406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="709" invocations="1359" avgMicrosecondsPerInvocation="522" maxMicrosecondsPerInvocation="165263" standardDeviationMircosecondsPerInvocation="4702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="678" invocations="1359" avgMicrosecondsPerInvocation="499" maxMicrosecondsPerInvocation="190228" standardDeviationMircosecondsPerInvocation="5254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="673" invocations="1342" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="17909" standardDeviationMircosecondsPerInvocation="1465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="648" invocations="1382" avgMicrosecondsPerInvocation="469" maxMicrosecondsPerInvocation="114169" standardDeviationMircosecondsPerInvocation="4513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="600" invocations="1026" avgMicrosecondsPerInvocation="585" maxMicrosecondsPerInvocation="129769" standardDeviationMircosecondsPerInvocation="4184"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="555" invocations="2" avgMicrosecondsPerInvocation="277677" maxMicrosecondsPerInvocation="398822" standardDeviationMircosecondsPerInvocation="121145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="533" invocations="330" avgMicrosecondsPerInvocation="1617" maxMicrosecondsPerInvocation="198391" standardDeviationMircosecondsPerInvocation="11234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="496" invocations="1367" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="159428" standardDeviationMircosecondsPerInvocation="4382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="349" invocations="330" avgMicrosecondsPerInvocation="1060" maxMicrosecondsPerInvocation="26852" standardDeviationMircosecondsPerInvocation="2907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="342" invocations="1764" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="141346" standardDeviationMircosecondsPerInvocation="3397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="307" invocations="202" avgMicrosecondsPerInvocation="1520" maxMicrosecondsPerInvocation="221717" standardDeviationMircosecondsPerInvocation="15564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="286" invocations="1051" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="15122" standardDeviationMircosecondsPerInvocation="1055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="279" invocations="1359" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="12464" standardDeviationMircosecondsPerInvocation="778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="236" invocations="202" avgMicrosecondsPerInvocation="1168" maxMicrosecondsPerInvocation="166161" standardDeviationMircosecondsPerInvocation="11708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="204" invocations="330" avgMicrosecondsPerInvocation="618" maxMicrosecondsPerInvocation="22598" standardDeviationMircosecondsPerInvocation="1878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="187" invocations="202" avgMicrosecondsPerInvocation="925" maxMicrosecondsPerInvocation="121296" standardDeviationMircosecondsPerInvocation="8573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" totalMilliseconds="170" invocations="202" avgMicrosecondsPerInvocation="841" maxMicrosecondsPerInvocation="100286" standardDeviationMircosecondsPerInvocation="7136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="161" invocations="202" avgMicrosecondsPerInvocation="797" maxMicrosecondsPerInvocation="105225" standardDeviationMircosecondsPerInvocation="7401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="141" invocations="1359" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="14484" standardDeviationMircosecondsPerInvocation="604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="120" invocations="22954" avgMicrosecondsPerInvocation="5" maxMicrosecondsPerInvocation="8057" standardDeviationMircosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="119" invocations="202" avgMicrosecondsPerInvocation="593" maxMicrosecondsPerInvocation="14328" standardDeviationMircosecondsPerInvocation="1687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="116" invocations="202" avgMicrosecondsPerInvocation="576" maxMicrosecondsPerInvocation="8452" standardDeviationMircosecondsPerInvocation="870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="114" invocations="13783" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="12120" standardDeviationMircosecondsPerInvocation="169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="109" invocations="202" avgMicrosecondsPerInvocation="540" maxMicrosecondsPerInvocation="16574" standardDeviationMircosecondsPerInvocation="1632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="101" invocations="1003" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="6563" standardDeviationMircosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="101" invocations="330" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="13938" standardDeviationMircosecondsPerInvocation="1262"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1359220263014" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

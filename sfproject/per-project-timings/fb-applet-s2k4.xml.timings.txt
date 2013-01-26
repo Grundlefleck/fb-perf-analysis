@@ -1,0 +1,17 @@
+
+edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory 3509
+edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory 2305
+edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory 1945
+edu.umd.cs.findbugs.detect.FieldItemSummary 1939
+edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory 1768
+edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder 1526
+edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine 1266
+edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine 1030
+edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis 886
+edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory 878
+de.tobject.findbugs.builder.FindBugs2Eclipse 739
+edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory 581
+edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory 524
+edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine 479
+edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase 465
+edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers 459

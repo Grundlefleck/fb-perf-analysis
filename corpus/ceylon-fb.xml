@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1-dev-20120816-r-1" sequence="1" timestamp="1359218902486" analysisTimestamp="1359218876663" release="">
+  <Project projectName="ceylon.language">
+    <Jar>/home/graham/dev/source/findbugs/successfactors/Corpus/ceylon-language/build/classes</Jar>
+    <AuxClasspathEntry>/home/graham/dev/source/findbugs/successfactors/Corpus/ceylon-language/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/eclipse/junoRC3/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/dev/eclipse/junoRC3/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar</AuxClasspathEntry>
+    <SrcDir>/home/graham/dev/source/findbugs/successfactors/Corpus/ceylon-language/src</SrcDir>
+    <SrcDir>/home/graham/dev/source/findbugs/successfactors/Corpus/ceylon-language/test</SrcDir>
+    <SrcDir>/home/graham/dev/source/findbugs/successfactors/Corpus/ceylon-language/runtime</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$abstract">
+      <SourceLine classname="ceylon.language.$abstract" start="10" end="12" sourcefile="$abstract.java" sourcepath="ceylon/language/$abstract.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$array">
+      <SourceLine classname="ceylon.language.$array" start="18" end="36" sourcefile="$array.java" sourcepath="ceylon/language/$array.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$default">
+      <SourceLine classname="ceylon.language.$default" start="10" end="12" sourcefile="$default.java" sourcepath="ceylon/language/$default.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$empty">
+      <SourceLine classname="ceylon.language.$empty" start="7" end="139" sourcefile="$empty.java" sourcepath="ceylon/language/$empty.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_WRONG_PACKAGE" priority="1" abbrev="Nm" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.$empty$1">
+      <SourceLine classname="ceylon.language.$empty$1" sourcefile="$empty.java" sourcepath="ceylon/language/$empty.java"/>
+    </Class>
+    <Method classname="ceylon.language.$empty$1" name="equals" signature="(Lceylon/language/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.$empty$1" start="111" end="111" startBytecode="0" endBytecode="91" sourcefile="$empty.java" sourcepath="ceylon/language/$empty.java"/>
+    </Method>
+    <Class classname="java.lang.Object" role="CLASS_SUPERCLASS">
+      <SourceLine classname="java.lang.Object" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Class>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="java.lang.Object" start="150" end="150" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Object;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Object" start="9" end="20" sourcefile="Object.java" sourcepath="ceylon/language/Object.java"/>
+    </Type>
+    <Type descriptor="Ljava/lang/Object;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.Object" start="37" end="553" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS" priority="2" abbrev="UMAC" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.$empty$1">
+      <SourceLine classname="ceylon.language.$empty$1" sourcefile="$empty.java" sourcepath="ceylon/language/$empty.java"/>
+    </Class>
+    <Method classname="ceylon.language.$empty$1" name="equals" signature="(Lceylon/language/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.$empty$1" start="111" end="111" startBytecode="0" endBytecode="91" sourcefile="$empty.java" sourcepath="ceylon/language/$empty.java"/>
+    </Method>
+    <Class classname="ceylon.language.Empty" role="CLASS_IMPLEMENTED_INTERFACE">
+      <SourceLine classname="ceylon.language.Empty" sourcefile="Empty.java" sourcepath="ceylon/language/Empty.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$false">
+      <SourceLine classname="ceylon.language.$false" start="7" end="22" sourcefile="$false.java" sourcepath="ceylon/language/$false.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$null">
+      <SourceLine classname="ceylon.language.$null" start="7" end="12" sourcefile="$null.java" sourcepath="ceylon/language/$null.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$throws">
+      <SourceLine classname="ceylon.language.$throws" start="16" end="18" sourcefile="$throws.java" sourcepath="ceylon/language/$throws.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.$true">
+      <SourceLine classname="ceylon.language.$true" start="7" end="22" sourcefile="$true.java" sourcepath="ceylon/language/$true.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_COMPARISON" priority="2" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Array">
+      <SourceLine classname="ceylon.language.Array" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+    </Class>
+    <Method classname="ceylon.language.Array" name="contains" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Array" start="418" end="425" startBytecode="0" endBytecode="19" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+    </Method>
+    <LocalVariable name="element" register="1" pc="13" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ceylon.language.Array" start="421" end="421" startBytecode="14" endBytecode="14" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_COMPARISON" priority="2" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Array">
+      <SourceLine classname="ceylon.language.Array" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+    </Class>
+    <Method classname="ceylon.language.Array" name="count" signature="(Ljava/lang/Object;)J" isStatic="false">
+      <SourceLine classname="ceylon.language.Array" start="432" end="440" startBytecode="0" endBytecode="21" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+    </Method>
+    <LocalVariable name="element" register="1" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ceylon.language.Array" start="436" end="436" startBytecode="17" endBytecode="17" sourcefile="Array.java" sourcepath="ceylon/language/Array.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ceylon.language.ArraySequence">
+      <SourceLine classname="ceylon.language.ArraySequence" sourcefile="ArraySequence.java" sourcepath="ceylon/language/ArraySequence.java"/>
+    </Class>
+    <Method classname="ceylon.language.ArraySequence" name="toArray" signature="()[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ceylon.language.ArraySequence" start="182" end="182" startBytecode="0" endBytecode="64" sourcefile="ArraySequence.java" sourcepath="ceylon/language/ArraySequence.java"/>
+    </Method>
+    <Field classname="ceylon.language.ArraySequence" name="array" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ceylon.language.ArraySequence" sourcefile="ArraySequence.java" sourcepath="ceylon/language/ArraySequence.java"/>
+    </Field>
+    <SourceLine classname="ceylon.language.ArraySequence" start="182" end="182" startBytecode="4" endBytecode="4" sourcefile="ArraySequence.java" sourcepath="ceylon/language/ArraySequence.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Category$Category$impl">
+      <SourceLine classname="ceylon.language.Category$Category$impl" start="22" end="42" sourcefile="Category.java" sourcepath="ceylon/language/Category.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Collection$Collection$impl">
+      <SourceLine classname="ceylon.language.Collection$Collection$impl" start="28" end="49" sourcefile="Collection.java" sourcepath="ceylon/language/Collection.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Correspondence$Correspondence$impl">
+      <SourceLine classname="ceylon.language.Correspondence$Correspondence$impl" start="157" end="216" sourcefile="Correspondence.java" sourcepath="ceylon/language/Correspondence.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Empty$Empty$impl">
+      <SourceLine classname="ceylon.language.Empty$Empty$impl" start="68" end="100" sourcefile="Empty.java" sourcepath="ceylon/language/Empty.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" abbrev="RCN" category="STYLE" first="1">
+    <Class classname="ceylon.language.Exception">
+      <SourceLine classname="ceylon.language.Exception" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Class>
+    <Method classname="ceylon.language.Exception" name="getMessage" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ceylon.language.Exception" start="38" end="46" startBytecode="0" endBytecode="125" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Method>
+    <Field classname="ceylon.language.Exception" name="description" signature="Lceylon/language/String;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="ceylon.language.Exception" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Field>
+    <SourceLine classname="ceylon.language.Exception" start="39" end="39" startBytecode="11" endBytecode="11" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="2" abbrev="RpC" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Exception">
+      <SourceLine classname="ceylon.language.Exception" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Class>
+    <Method classname="ceylon.language.Exception" name="getMessage" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ceylon.language.Exception" start="38" end="46" startBytecode="0" endBytecode="125" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Method>
+    <SourceLine classname="ceylon.language.Exception" start="38" end="38" startBytecode="0" endBytecode="3" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    <SourceLine classname="ceylon.language.Exception" start="39" end="39" startBytecode="7" endBytecode="10" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Exception$Exception$impl">
+      <SourceLine classname="ceylon.language.Exception$Exception$impl" start="60" end="65" sourcefile="Exception.java" sourcepath="ceylon/language/Exception.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.FixedSized$FixedSized$impl">
+      <SourceLine classname="ceylon.language.FixedSized$FixedSized$impl" start="24" end="31" sourcefile="FixedSized.java" sourcepath="ceylon/language/FixedSized.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Float">
+      <SourceLine classname="ceylon.language.Float" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Class>
+    <Method classname="ceylon.language.Float" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Float" start="180" end="190" startBytecode="0" endBytecode="171" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Integer" start="1" end="282" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Float" start="180" end="180" startBytecode="1" endBytecode="1" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Float">
+      <SourceLine classname="ceylon.language.Float" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Class>
+    <Method classname="ceylon.language.Float" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Float" start="180" end="190" startBytecode="0" endBytecode="171" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Integer" start="1" end="282" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Float" start="181" end="181" startBytecode="12" endBytecode="12" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Float">
+      <SourceLine classname="ceylon.language.Float" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Class>
+    <Method classname="ceylon.language.Float" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Float" start="180" end="190" startBytecode="0" endBytecode="171" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Integer" start="1" end="282" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Float" start="183" end="183" startBytecode="28" endBytecode="28" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Float">
+      <SourceLine classname="ceylon.language.Float" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Class>
+    <Method classname="ceylon.language.Float" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Float" start="180" end="190" startBytecode="0" endBytecode="171" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Integer" start="1" end="282" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Float" start="184" end="184" startBytecode="39" endBytecode="39" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" abbrev="Eq" category="STYLE" first="1">
+    <Class classname="ceylon.language.IdentifiableObject">
+      <SourceLine classname="ceylon.language.IdentifiableObject" sourcefile="IdentifiableObject.java" sourcepath="ceylon/language/IdentifiableObject.java"/>
+    </Class>
+    <Method classname="ceylon.language.IdentifiableObject" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.IdentifiableObject" start="16" end="20" startBytecode="0" endBytecode="87" sourcefile="IdentifiableObject.java" sourcepath="ceylon/language/IdentifiableObject.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Integer">
+      <SourceLine classname="ceylon.language.Integer" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Class>
+    <Method classname="ceylon.language.Integer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Integer" start="236" end="246" startBytecode="0" endBytecode="170" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Float;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Float" start="1" end="214" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Integer" start="242" end="242" startBytecode="53" endBytecode="53" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Integer">
+      <SourceLine classname="ceylon.language.Integer" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Class>
+    <Method classname="ceylon.language.Integer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Integer" start="236" end="246" startBytecode="0" endBytecode="170" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+    </Method>
+    <Type descriptor="Lceylon/language/Float;" role="TYPE_FOUND">
+      <SourceLine classname="ceylon.language.Float" start="1" end="214" sourcefile="Float.java" sourcepath="ceylon/language/Float.java"/>
+    </Type>
+    <SourceLine classname="ceylon.language.Integer" start="243" end="243" startBytecode="65" endBytecode="65" sourcefile="Integer.java" sourcepath="ceylon/language/Integer.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Iterable$Iterable$impl">
+      <SourceLine classname="ceylon.language.Iterable$Iterable$impl" start="22" end="24" sourcefile="Iterable.java" sourcepath="ceylon/language/Iterable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.List$List$impl">
+      <SourceLine classname="ceylon.language.List$List$impl" start="61" end="135" sourcefile="List.java" sourcepath="ceylon/language/List.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Map$Map$impl">
+      <SourceLine classname="ceylon.language.Map$Map$impl" start="46" end="351" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_ALWAYS_FALSE" priority="1" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Map$Map$impl$1inverse">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1inverse" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Class>
+    <Method classname="ceylon.language.Map$Map$impl$1inverse" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1inverse" start="261" end="261" startBytecode="0" endBytecode="53" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Method>
+    <SourceLine classname="ceylon.language.Map$Map$impl$1inverse" start="261" end="261" startBytecode="1" endBytecode="1" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_ALWAYS_FALSE" priority="1" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Map$Map$impl$1keySet">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1keySet" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Class>
+    <Method classname="ceylon.language.Map$Map$impl$1keySet" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1keySet" start="104" end="104" startBytecode="0" endBytecode="53" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Method>
+    <SourceLine classname="ceylon.language.Map$Map$impl$1keySet" start="104" end="104" startBytecode="1" endBytecode="1" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_ALWAYS_FALSE" priority="1" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="ceylon.language.Map$Map$impl$1valueCollection">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1valueCollection" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Class>
+    <Method classname="ceylon.language.Map$Map$impl$1valueCollection" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="ceylon.language.Map$Map$impl$1valueCollection" start="197" end="197" startBytecode="0" endBytecode="53" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+    </Method>
+    <SourceLine classname="ceylon.language.Map$Map$impl$1valueCollection" start="197" end="197" startBytecode="1" endBytecode="1" sourcefile="Map.java" sourcepath="ceylon/language/Map.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.None$None$impl">
+      <SourceLine classname="ceylon.language.None$None$impl" start="29" end="40" sourcefile="None.java" sourcepath="ceylon/language/None.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Sequence$Sequence$impl">
+      <SourceLine classname="ceylon.language.Sequence$Sequence$impl" start="37" end="45" sourcefile="Sequence.java" sourcepath="ceylon/language/Sequence.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Set$Set$impl">
+      <SourceLine classname="ceylon.language.Set$Set$impl" start="57" end="105" sourcefile="Set.java" sourcepath="ceylon/language/Set.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Sized$Sized$impl">
+      <SourceLine classname="ceylon.language.Sized$Sized$impl" start="16" end="19" sourcefile="Sized.java" sourcepath="ceylon/language/Sized.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.Some$Some$impl">
+      <SourceLine classname="ceylon.language.Some$Some$impl" start="25" end="36" sourcefile="Some.java" sourcepath="ceylon/language/Some.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.String$String$impl">
+      <SourceLine classname="ceylon.language.String$String$impl" start="524" end="529" sourcefile="String.java" sourcepath="ceylon/language/String.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.actual">
+      <SourceLine classname="ceylon.language.actual" start="10" end="12" sourcefile="actual.java" sourcepath="ceylon/language/actual.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.append">
+      <SourceLine classname="ceylon.language.append" start="17" end="42" sourcefile="append.java" sourcepath="ceylon/language/append.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.arrayOfNone">
+      <SourceLine classname="ceylon.language.arrayOfNone" start="13" end="18" sourcefile="arrayOfNone.java" sourcepath="ceylon/language/arrayOfNone.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.arrayOfSome">
+      <SourceLine classname="ceylon.language.arrayOfSome" start="18" end="32" sourcefile="arrayOfSome.java" sourcepath="ceylon/language/arrayOfSome.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.bottom">
+      <SourceLine classname="ceylon.language.bottom" start="8" end="11" sourcefile="bottom.java" sourcepath="ceylon/language/bottom.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.by">
+      <SourceLine classname="ceylon.language.by" start="16" end="18" sourcefile="by.java" sourcepath="ceylon/language/by.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.className">
+      <SourceLine classname="ceylon.language.className" start="12" end="19" sourcefile="className.java" sourcepath="ceylon/language/className.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.coalesce">
+      <SourceLine classname="ceylon.language.coalesce" start="17" end="31" sourcefile="coalesce.java" sourcepath="ceylon/language/coalesce.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.deprecated">
+      <SourceLine classname="ceylon.language.deprecated" start="14" end="16" sourcefile="deprecated.java" sourcepath="ceylon/language/deprecated.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.descriptor.Import$Import$impl">
+      <SourceLine classname="ceylon.language.descriptor.Import$Import$impl" start="59" end="79" sourcefile="Import.java" sourcepath="ceylon/language/descriptor/Import.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.descriptor.Module$Module$impl">
+      <SourceLine classname="ceylon.language.descriptor.Module$Module$impl" start="80" end="115" sourcefile="Module.java" sourcepath="ceylon/language/descriptor/Module.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.descriptor.Package$Package$impl">
+      <SourceLine classname="ceylon.language.descriptor.Package$Package$impl" start="63" end="92" sourcefile="Package.java" sourcepath="ceylon/language/descriptor/Package.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.doc">
+      <SourceLine classname="ceylon.language.doc" start="12" end="14" sourcefile="doc.java" sourcepath="ceylon/language/doc.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.emptyIterator">
+      <SourceLine classname="ceylon.language.emptyIterator" start="8" end="23" sourcefile="emptyIterator.java" sourcepath="ceylon/language/emptyIterator.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.entries">
+      <SourceLine classname="ceylon.language.entries" start="18" end="35" sourcefile="entries.java" sourcepath="ceylon/language/entries.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.equal">
+      <SourceLine classname="ceylon.language.equal" start="7" end="16" sourcefile="equal.java" sourcepath="ceylon/language/equal.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.exhausted">
+      <SourceLine classname="ceylon.language.exhausted" start="7" end="17" sourcefile="exhausted.java" sourcepath="ceylon/language/exhausted.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.formal">
+      <SourceLine classname="ceylon.language.formal" start="10" end="12" sourcefile="formal.java" sourcepath="ceylon/language/formal.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.identical">
+      <SourceLine classname="ceylon.language.identical" start="12" end="21" sourcefile="identical.java" sourcepath="ceylon/language/identical.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.identityHash">
+      <SourceLine classname="ceylon.language.identityHash" start="12" end="18" sourcefile="identityHash.java" sourcepath="ceylon/language/identityHash.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.infinity">
+      <SourceLine classname="ceylon.language.infinity" start="7" end="10" sourcefile="infinity.java" sourcepath="ceylon/language/infinity.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.join">
+      <SourceLine classname="ceylon.language.join" start="18" end="39" sourcefile="join.java" sourcepath="ceylon/language/join.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.larger">
+      <SourceLine classname="ceylon.language.larger" start="7" end="16" sourcefile="larger.java" sourcepath="ceylon/language/larger.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.largest">
+      <SourceLine classname="ceylon.language.largest" start="14" end="25" sourcefile="largest.java" sourcepath="ceylon/language/largest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.max">
+      <SourceLine classname="ceylon.language.max" start="14" end="30" sourcefile="max.java" sourcepath="ceylon/language/max.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.min">
+      <SourceLine classname="ceylon.language.min" start="14" end="30" sourcefile="min.java" sourcepath="ceylon/language/min.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.parseFloat">
+      <SourceLine classname="ceylon.language.parseFloat" start="14" end="223" sourcefile="parseFloat.java" sourcepath="ceylon/language/parseFloat.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.parseInteger">
+      <SourceLine classname="ceylon.language.parseInteger" start="15" end="115" sourcefile="parseInteger.java" sourcepath="ceylon/language/parseInteger.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.prepend">
+      <SourceLine classname="ceylon.language.prepend" start="17" end="42" sourcefile="prepend.java" sourcepath="ceylon/language/prepend.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.print">
+      <SourceLine classname="ceylon.language.print" start="10" end="15" sourcefile="print.java" sourcepath="ceylon/language/print.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ceylon.language.process">
+      <SourceLine classname="ceylon.language.process" sourcefile="process.java" sourcepath="ceylon/language/process.java"/>
+    </Class>
+    <Method classname="ceylon.language.process" name="readLine" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ceylon.language.process" start="53" end="58" startBytecode="0" endBytecode="131" sourcefile="process.java" sourcepath="ceylon/language/process.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="146" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="ceylon.language.process" start="54" end="54" startBytecode="11" endBytecode="11" sourcefile="process.java" sourcepath="ceylon/language/process.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.process">
+      <SourceLine classname="ceylon.language.process" start="11" end="79" sourcefile="process.java" sourcepath="ceylon/language/process.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.see">
+      <SourceLine classname="ceylon.language.see" start="16" end="18" sourcefile="see.java" sourcepath="ceylon/language/see.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.shared">
+      <SourceLine classname="ceylon.language.shared" start="10" end="12" sourcefile="shared.java" sourcepath="ceylon/language/shared.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.small">
+      <SourceLine classname="ceylon.language.small" start="10" end="12" sourcefile="small.java" sourcepath="ceylon/language/small.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.smaller">
+      <SourceLine classname="ceylon.language.smaller" start="7" end="16" sourcefile="smaller.java" sourcepath="ceylon/language/smaller.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.smallest">
+      <SourceLine classname="ceylon.language.smallest" start="14" end="25" sourcefile="smallest.java" sourcepath="ceylon/language/smallest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.tagged">
+      <SourceLine classname="ceylon.language.tagged" start="16" end="18" sourcefile="tagged.java" sourcepath="ceylon/language/tagged.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.variable">
+      <SourceLine classname="ceylon.language.variable" start="10" end="12" sourcefile="variable.java" sourcepath="ceylon/language/variable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ceylon.language.zip">
+      <SourceLine classname="ceylon.language.zip" start="17" end="39" sourcefile="zip.java" sourcepath="ceylon/language/zip.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_INTERFACE" priority="2" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="com.redhat.ceylon.compiler.java.metadata.Annotation">
+      <SourceLine classname="com.redhat.ceylon.compiler.java.metadata.Annotation" sourcefile="Annotation.java" sourcepath="com/redhat/ceylon/compiler/java/metadata/Annotation.java"/>
+    </Class>
+    <Class classname="java.lang.annotation.Annotation">
+      <SourceLine classname="java.lang.annotation.Annotation" sourcefile="Annotation.java" sourcepath="java/lang/annotation/Annotation.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS" priority="1" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="com.redhat.ceylon.compiler.java.metadata.Object">
+      <SourceLine classname="com.redhat.ceylon.compiler.java.metadata.Object" sourcefile="Object.java" sourcepath="com/redhat/ceylon/compiler/java/metadata/Object.java"/>
+    </Class>
+    <Class classname="java.lang.Object">
+      <SourceLine classname="java.lang.Object" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 26 Jan 2013 15:33:52 +0000" total_classes="158" referenced_classes="219" total_bugs="82" total_size="3026" num_packages="5" vm_version="23.2-b09" cpu_seconds="2303.34" clock_seconds="4496.51" peak_mbytes="1224.28" alloc_mbytes="910.25" gc_seconds="620.47" priority_2="70" priority_1="12">
+    <PackageStats package="ceylon.language" total_bugs="77" total_types="127" total_size="2792" priority_2="66" priority_1="11">
+      <ClassStats class="ceylon.language.$abstract" sourceFile="$abstract.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$array" sourceFile="$array.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$default" sourceFile="$default.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$empty" sourceFile="$empty.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$empty$1" sourceFile="$empty.java" interface="false" size="59" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="ceylon.language.$false" sourceFile="$false.java" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$null" sourceFile="$null.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$package" sourceFile="$package.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ceylon.language.$throws" sourceFile="$throws.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.$true" sourceFile="$true.java" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Array" sourceFile="Array.java" interface="false" size="251" bugs="2" priority_2="2"/>
+      <ClassStats class="ceylon.language.Array$1ArrayIterator" sourceFile="Array.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ceylon.language.ArraySequence" sourceFile="ArraySequence.java" interface="false" size="103" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.ArraySequence$ArrayListIterator" sourceFile="ArraySequence.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ceylon.language.Boolean" sourceFile="Boolean.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="ceylon.language.Callable" sourceFile="Callable.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="ceylon.language.Castable" sourceFile="Castable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.Category" sourceFile="Category.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ceylon.language.Category$Category$impl" sourceFile="Category.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Character" sourceFile="Character.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="ceylon.language.Cloneable" sourceFile="Cloneable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.Collection" sourceFile="Collection.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ceylon.language.Collection$Collection$impl" sourceFile="Collection.java" interface="false" size="16" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Comparable" sourceFile="Comparable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.Comparison" sourceFile="Comparison.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="ceylon.language.Container" sourceFile="Container.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.Correspondence" sourceFile="Correspondence.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="ceylon.language.Correspondence$Correspondence$impl" sourceFile="Correspondence.java" interface="false" size="25" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Correspondence$Correspondence$impl$1" sourceFile="Correspondence.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ceylon.language.Correspondence$Items" sourceFile="Correspondence.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="ceylon.language.Empty" sourceFile="Empty.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="ceylon.language.Empty$Empty$impl" sourceFile="Empty.java" interface="false" size="25" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.EmptyArray" sourceFile="Array.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="ceylon.language.Entry" sourceFile="Entry.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ceylon.language.Exception" sourceFile="Exception.java" interface="false" size="22" bugs="2" priority_2="2"/>
+      <ClassStats class="ceylon.language.Exception$Exception$impl" sourceFile="Exception.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Finished" sourceFile="Finished.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.FixedSized" sourceFile="FixedSized.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.FixedSized$FixedSized$impl" sourceFile="FixedSized.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Float" sourceFile="Float.java" interface="false" size="99" bugs="4" priority_1="4"/>
+      <ClassStats class="ceylon.language.FloatTest" sourceFile="FloatTest.java" interface="false" size="90" bugs="0"/>
+      <ClassStats class="ceylon.language.IdentifiableObject" sourceFile="IdentifiableObject.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Integer" sourceFile="Integer.java" interface="false" size="139" bugs="2" priority_1="2"/>
+      <ClassStats class="ceylon.language.IntegerTest" sourceFile="IntegerTest.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="ceylon.language.Integral" sourceFile="Integral.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ceylon.language.Invertable" sourceFile="Invertable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.Iterable" sourceFile="Iterable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.Iterable$Iterable$impl" sourceFile="Iterable.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Iterator" sourceFile="Iterator.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.List" sourceFile="List.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="ceylon.language.List$List$impl" sourceFile="List.java" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.List$List$impl$1ListIterator" sourceFile="List.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ceylon.language.Map" sourceFile="Map.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="ceylon.language.Map$Map$impl" sourceFile="Map.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Map$Map$impl$1inverse" sourceFile="Map.java" interface="false" size="46" bugs="1" priority_1="1"/>
+      <ClassStats class="ceylon.language.Map$Map$impl$1keySet" sourceFile="Map.java" interface="false" size="40" bugs="1" priority_1="1"/>
+      <ClassStats class="ceylon.language.Map$Map$impl$1valueCollection" sourceFile="Map.java" interface="false" size="28" bugs="1" priority_1="1"/>
+      <ClassStats class="ceylon.language.None" sourceFile="None.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="ceylon.language.None$None$impl" sourceFile="None.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.NonemptyArray" sourceFile="Array.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="ceylon.language.Nothing" sourceFile="Nothing.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.Number" sourceFile="Number.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="ceylon.language.Numeric" sourceFile="Numeric.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="ceylon.language.Object" sourceFile="Object.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ceylon.language.Ordinal" sourceFile="Ordinal.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.OverflowException" sourceFile="OverflowException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ceylon.language.Quoted" sourceFile="Quoted.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ceylon.language.Range" sourceFile="Range.java" interface="false" size="132" bugs="0"/>
+      <ClassStats class="ceylon.language.Range$1RangeIterator" sourceFile="Range.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ceylon.language.Ranged" sourceFile="Ranged.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.Sequence" sourceFile="Sequence.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="ceylon.language.Sequence$Sequence$impl" sourceFile="Sequence.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.SequenceAppender" sourceFile="SequenceAppender.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ceylon.language.SequenceBuilder" sourceFile="SequenceBuilder.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ceylon.language.Set" sourceFile="Set.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="ceylon.language.Set$Set$impl" sourceFile="Set.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Singleton" sourceFile="Singleton.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="ceylon.language.Singleton$1SingletonIterator" sourceFile="Singleton.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ceylon.language.Sized" sourceFile="Sized.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.Sized$Sized$impl" sourceFile="Sized.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.Some" sourceFile="Some.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ceylon.language.Some$Some$impl" sourceFile="Some.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.String" sourceFile="String.java" interface="false" size="222" bugs="0"/>
+      <ClassStats class="ceylon.language.String$1StringIterator" sourceFile="String.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ceylon.language.String$String$impl" sourceFile="String.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.String$Tokens" sourceFile="String.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ceylon.language.String$Tokens$1TokenIterator" sourceFile="String.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ceylon.language.StringBuilder" sourceFile="StringBuilder.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ceylon.language.Summable" sourceFile="Summable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ceylon.language.Void" sourceFile="Void.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="ceylon.language.actual" sourceFile="actual.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.append" sourceFile="append.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.arrayOfNone" sourceFile="arrayOfNone.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.arrayOfSome" sourceFile="arrayOfSome.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.bottom" sourceFile="bottom.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.by" sourceFile="by.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.className" sourceFile="className.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.coalesce" sourceFile="coalesce.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.deprecated" sourceFile="deprecated.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.doc" sourceFile="doc.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.emptyIterator" sourceFile="emptyIterator.java" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.entries" sourceFile="entries.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.equal" sourceFile="equal.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.exhausted" sourceFile="exhausted.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.formal" sourceFile="formal.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.identical" sourceFile="identical.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.identityHash" sourceFile="identityHash.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.infinity" sourceFile="infinity.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.join" sourceFile="join.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.larger" sourceFile="larger.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.largest" sourceFile="largest.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.max" sourceFile="max.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.min" sourceFile="min.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.module" sourceFile="module.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ceylon.language.parseFloat" sourceFile="parseFloat.java" interface="false" size="114" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.parseInteger" sourceFile="parseInteger.java" interface="false" size="60" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.prepend" sourceFile="prepend.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.print" sourceFile="print.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.process" sourceFile="process.java" interface="false" size="45" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="ceylon.language.see" sourceFile="see.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.shared" sourceFile="shared.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.small" sourceFile="small.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.smaller" sourceFile="smaller.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.smallest" sourceFile="smallest.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.tagged" sourceFile="tagged.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.variable" sourceFile="variable.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.zip" sourceFile="zip.java" interface="false" size="14" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="ceylon.language.descriptor" total_bugs="3" total_types="7" total_size="108" priority_2="3">
+      <ClassStats class="ceylon.language.descriptor.$package" sourceFile="$package.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ceylon.language.descriptor.Import" sourceFile="Import.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ceylon.language.descriptor.Import$Import$impl" sourceFile="Import.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.descriptor.Module" sourceFile="Module.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="ceylon.language.descriptor.Module$Module$impl" sourceFile="Module.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="ceylon.language.descriptor.Package" sourceFile="Package.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ceylon.language.descriptor.Package$Package$impl" sourceFile="Package.java" interface="false" size="9" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.redhat.ceylon.compiler.java" total_bugs="0" total_types="1" total_size="48">
+      <ClassStats class="com.redhat.ceylon.compiler.java.Util" sourceFile="Util.java" interface="false" size="48" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.redhat.ceylon.compiler.java.language" total_bugs="0" total_types="2" total_size="22">
+      <ClassStats class="com.redhat.ceylon.compiler.java.language.AbstractCallable" sourceFile="AbstractCallable.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.language.EnumeratedTypeError" sourceFile="EnumeratedTypeError.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.redhat.ceylon.compiler.java.metadata" total_bugs="2" total_types="21" total_size="56" priority_2="1" priority_1="1">
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Annotation" sourceFile="Annotation.java" interface="true" size="4" bugs="1" priority_2="1"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Annotations" sourceFile="Annotations.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Attribute" sourceFile="Attribute.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.CaseTypes" sourceFile="CaseTypes.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Ceylon" sourceFile="Ceylon.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Class" sourceFile="Class.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Defaulted" sourceFile="Defaulted.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Ignore" sourceFile="Ignore.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Import" sourceFile="Import.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Method" sourceFile="Method.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Module" sourceFile="Module.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Name" sourceFile="Name.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.NamedArgument" sourceFile="NamedArgument.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Object" sourceFile="Object.java" interface="true" size="1" bugs="1" priority_1="1"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Package" sourceFile="Package.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.SatisfiedTypes" sourceFile="SatisfiedTypes.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Sequenced" sourceFile="Sequenced.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.TypeInfo" sourceFile="TypeInfo.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.TypeParameter" sourceFile="TypeParameter.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.TypeParameters" sourceFile="TypeParameters.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.redhat.ceylon.compiler.java.metadata.Variance" sourceFile="Variance.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="3140" invocations="2" avgMicrosecondsPerInvocation="1570128" maxMicrosecondsPerInvocation="1868497" standardDeviationMircosecondsPerInvocation="298366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1769" invocations="625" avgMicrosecondsPerInvocation="2830" maxMicrosecondsPerInvocation="121141" standardDeviationMircosecondsPerInvocation="7850"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1208" invocations="219" avgMicrosecondsPerInvocation="5516" maxMicrosecondsPerInvocation="130442" standardDeviationMircosecondsPerInvocation="16150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1006" invocations="801" avgMicrosecondsPerInvocation="1256" maxMicrosecondsPerInvocation="36442" standardDeviationMircosecondsPerInvocation="3355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="980" invocations="762" avgMicrosecondsPerInvocation="1286" maxMicrosecondsPerInvocation="150730" standardDeviationMircosecondsPerInvocation="7597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="965" invocations="219" avgMicrosecondsPerInvocation="4408" maxMicrosecondsPerInvocation="116606" standardDeviationMircosecondsPerInvocation="12356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="821" invocations="703" avgMicrosecondsPerInvocation="1168" maxMicrosecondsPerInvocation="33668" standardDeviationMircosecondsPerInvocation="2822"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="759" invocations="814" avgMicrosecondsPerInvocation="933" maxMicrosecondsPerInvocation="66947" standardDeviationMircosecondsPerInvocation="3045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="718" invocations="814" avgMicrosecondsPerInvocation="882" maxMicrosecondsPerInvocation="52239" standardDeviationMircosecondsPerInvocation="2752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="689" invocations="219" avgMicrosecondsPerInvocation="3148" maxMicrosecondsPerInvocation="96856" standardDeviationMircosecondsPerInvocation="9217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="682" invocations="801" avgMicrosecondsPerInvocation="852" maxMicrosecondsPerInvocation="59278" standardDeviationMircosecondsPerInvocation="2719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="505" invocations="660" avgMicrosecondsPerInvocation="765" maxMicrosecondsPerInvocation="17033" standardDeviationMircosecondsPerInvocation="2005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="498" invocations="1050" avgMicrosecondsPerInvocation="474" maxMicrosecondsPerInvocation="23816" standardDeviationMircosecondsPerInvocation="1578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="402" invocations="219" avgMicrosecondsPerInvocation="1838" maxMicrosecondsPerInvocation="28119" standardDeviationMircosecondsPerInvocation="4185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="373" invocations="232" avgMicrosecondsPerInvocation="1609" maxMicrosecondsPerInvocation="92719" standardDeviationMircosecondsPerInvocation="6525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="351" invocations="219" avgMicrosecondsPerInvocation="1603" maxMicrosecondsPerInvocation="42481" standardDeviationMircosecondsPerInvocation="4780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="332" invocations="628" avgMicrosecondsPerInvocation="529" maxMicrosecondsPerInvocation="13643" standardDeviationMircosecondsPerInvocation="1600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="306" invocations="927" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="101654" standardDeviationMircosecondsPerInvocation="3476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="304" invocations="219" avgMicrosecondsPerInvocation="1391" maxMicrosecondsPerInvocation="23764" standardDeviationMircosecondsPerInvocation="3533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="303" invocations="801" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="22175" standardDeviationMircosecondsPerInvocation="1490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="263" invocations="8667" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="12066" standardDeviationMircosecondsPerInvocation="270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="235" invocations="219" avgMicrosecondsPerInvocation="1077" maxMicrosecondsPerInvocation="37057" standardDeviationMircosecondsPerInvocation="3657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="220" invocations="700" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="12800" standardDeviationMircosecondsPerInvocation="1403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="213" invocations="219" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="14990" standardDeviationMircosecondsPerInvocation="2442"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1359218902459" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

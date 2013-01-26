@@ -1,0 +1,10 @@
+
+edu.umd.cs.findbugs.detect.FieldItemSummary 1012
+edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine 998
+edu.umd.cs.findbugs.detect.NoteJCIPAnnotation 736
+edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine 681
+de.tobject.findbugs.builder.FindBugs2Eclipse 515
+edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine 504
+edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers 426
+edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase 352
+edu.umd.cs.findbugs.detect.ExplicitSerialization 310

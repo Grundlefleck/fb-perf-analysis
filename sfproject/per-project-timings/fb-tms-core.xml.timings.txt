@@ -1,0 +1,27 @@
+
+edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine 112236
+edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory 24154
+edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder 23316
+edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory 22968
+edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory 21881
+edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory 20814
+de.tobject.findbugs.builder.FindBugs2Eclipse 15980
+edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis 12170
+edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory 8447
+edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory 5730
+edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine 4770
+edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory 4210
+edu.umd.cs.findbugs.detect.LoadOfKnownNullValue 3741
+edu.umd.cs.findbugs.detect.FindSelfComparison 3061
+edu.umd.cs.findbugs.detect.UnreadFields 2925
+edu.umd.cs.findbugs.detect.URLProblems 2919
+edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine 2880
+edu.umd.cs.findbugs.detect.FieldItemSummary 2845
+edu.umd.cs.findbugs.detect.DefaultEncodingDetector 2812
+edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant 2715
+edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions 2658
+edu.umd.cs.findbugs.detect.AppendingToAnObjectOutputStream 2611
+edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory 2541
+edu.umd.cs.findbugs.detect.RuntimeExceptionCapture 2509
+edu.umd.cs.findbugs.detect.DumbMethods 2443
+edu.umd.cs.findbugs.detect.FindBadCast2 2397

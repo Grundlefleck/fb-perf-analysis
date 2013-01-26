@@ -1,0 +1,20 @@
+
+edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation 1747
+edu.umd.cs.findbugs.detect.FieldItemSummary 1427
+edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory 968
+edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine 928
+edu.umd.cs.findbugs.util.TopologicalSort 844
+edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine 779
+edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory 779
+edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory 715
+edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder 711
+de.tobject.findbugs.builder.FindBugs2Eclipse 693
+edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine 653
+edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory 640
+edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory 545
+edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase 525
+edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers 429
+edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory 394
+edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis 378
+edu.umd.cs.findbugs.detect.ExplicitSerialization 333
+edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures 273

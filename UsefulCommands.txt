@@ -1,10 +1,25 @@
 Commands:
 
 # Queries a FindBugs analysis file for total milliseconds, by name of Profiler
-xmllint --xpath "/FindBugsProfile/ClassProfile/@name|ClassProfile/@totalMilliseconds" $inputxml > all_totals.txt
+xmllint --xpath "//FindBugsProfile/ClassProfile/@*[name()='name' or name()='totalMilliseconds']" $inputxml > all_totals.txt
+
+# Takes the output of the above xmllint command, and prints name=xxx totalMilliseconds=xxx each on a new line
+sed -e 's/\s\+name/\nname/g'
 
 # Takes a file "all_totals.txt" and strips out the XML parts of it, i.e. foo="bar" becomes bar
 sed -e 's/"//g' all_totals.txt | sed -e 's/name=//g' | sed -e 's/totalMilliseconds=//g' | sort > all_totals_sorted_by_name.txt 
+
+# The above, all together:
+xmllint --xpath "//FindBugsProfile/ClassProfile/@*[name()='name' or name()='totalMilliseconds']" $inputxml \
+  | sed -e 's/\s\+name/\nname/g' \
+  | sed -e 's/"//g' \
+  | sed -e 's/name=//g' \
+  | sed -e 's/totalMilliseconds=//g' 
+  
+# Do the above individually for all xml files in current directory
+for f in *.xml; do xmllint --xpath "//FindBugsProfile/ClassProfile/@*[name()='name' or name()='totalMilliseconds']" $f   | sed -e 's/\s\+name/\nname/g'   | sed -e 's/"//g'   | sed -e 's/name=//g'   | sed -e 's/totalMilliseconds=//g' > $f.timings.txt; done
+
+
 
 # Takes a file with format where each line is [profile_name time_in_ms] (e.g. "some.profile.Name 123") and
 #   calculates total for each distinct profile_name
@@ -12,3 +27,5 @@ sed -e 's/"//g' all_totals.txt | sed -e 's/name=//g' | sed -e 's/totalMillisecon
 
 # Takes some format as above, but outputs total time across all profile_names
 ./total_time_accounted_for.py all_totals_sorted_by_name.txt
+
+

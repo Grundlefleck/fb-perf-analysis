@@ -1,0 +1,11 @@
+
+edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory 80069
+edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory 25259
+edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory 18731
+edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder 15538
+edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory 9718
+edu.umd.cs.findbugs.detect.LoadOfKnownNullValue 8116
+edu.umd.cs.findbugs.detect.FindInconsistentSync2 8027
+edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory 7886
+edu.umd.cs.findbugs.detect.FindDeadLocalStores 6795
+edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis 5378

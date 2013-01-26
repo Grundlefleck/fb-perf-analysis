@@ -1,0 +1,26 @@
+
+edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory 28709
+edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder 26464
+edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory 26305
+edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory 19455
+edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory 13668
+edu.umd.cs.findbugs.detect.AppendingToAnObjectOutputStream 11817
+edu.umd.cs.findbugs.detect.LoadOfKnownNullValue 8480
+edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase 8256
+edu.umd.cs.findbugs.detect.FindDeadLocalStores 7067
+edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine 5023
+edu.umd.cs.findbugs.detect.DumbMethods 4971
+edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory 4904
+edu.umd.cs.findbugs.detect.FindHEmismatch 4810
+edu.umd.cs.findbugs.detect.MethodReturnCheck 4781
+edu.umd.cs.findbugs.detect.IntCast2LongAsInstant 4737
+edu.umd.cs.findbugs.ba.obl.ObligationAnalysis 4657
+edu.umd.cs.findbugs.DetectorToDetector2Adapter 4416
+edu.umd.cs.findbugs.detect.BooleanReturnNull 4396
+edu.umd.cs.findbugs.detect.DefaultEncodingDetector 4355
+edu.umd.cs.findbugs.detect.SerializableIdiom 4244
+edu.umd.cs.findbugs.detect.InitializeNonnullFieldsInConstructor 4155
+edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer 4145
+edu.umd.cs.findbugs.detect.FindBadForLoop 3987
+edu.umd.cs.findbugs.detect.HugeSharedStringConstants 3855
+edu.umd.cs.findbugs.detect.InfiniteLoop 3837
