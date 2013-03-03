@@ -1,0 +1,106 @@
+AnalysisCache
+ - references to Global.getAnalysisCache = 137
+ - references to IAnalysisCache = 192
+ 
+ 
+Method calls on IAnalysisCache:
+Consists of:
+ - registerClassAnalysisEngine	= 9
+ - registerMethodAnalysisEngine	= 4
+ - getClassAnalysis		= 107
+ - probeClassAnalysis		= 1
+ - getMethodAnalysis		= 45
+ - eagerlyPutMethodAnalysis	= 2
+ - purgeMethodAnalyses		= 1
+ - purgeAllMethodAnalysis	= 1
+ - purgeClassAnalysis		= 1
+ - registerDatabaseFactory	= 1
+ - getDatabase			= 19
+ - getOptionalDatabase		= 1
+ - eagerlyPutDatabase		= 4 
+ - getClassPath			= 3
+ - getErrorLogger		= 13 
+ - getAnalysisLocals		= 1
+ - getProfiler			= 13
+
+ ------------------------
+   Total			= 226 
+   
+Breakdown of getClassAnalysis:
+Types of analysis:
+ - XClass		(FB)			= 61
+ - ClassContext		(FB facade)		= 10 (called once per detector)
+ - FBClassReader	(FB wrapper for ASM)	= 3
+ - ConstantPoolGen	(BCEL)			= 6
+ - ClassData		(FB)			= 8
+ - JavaClass		(BCEL)			= 14
+ - AssertionMethods	(FB around BCEL)	= 1
+ 
+Breakdown of getMethodAnalysis:
+Types of analysis:
+ - Method			(BCEL)
+ - DepthFirstSearch		(FB)
+ - ReverseDepthFirstSearch	(FB)
+ - CFG				(FB around BCEL)
+ - ValueNumberDataflow		(FB)
+ - MethodGen			(BCEL)
+ - JumpInfo			(FB around BCEL, and others)
+ - CompactLocationNumbering	(FB)
+ - ExceptionSetFactory		(FB)
+ - IsNullValueDataflow		(FB)
+ - LoadedFieldSet		(FB around BCEL)
+ - TypeDataflow			(FB)
+ - ObligationDataflow		(FB)
+
+
+Number of exceptions:
+ - 199 
+ - `grep "DetectorToDetector2Adapter.visitClass" $file | wc -l`
+
+Number of exceptions containing call to AnalysisCache.getMethodAnalysis:
+ - 191
+ - `grep "AnalysisCache.getMethodAnalysis" $file | wc -l`
+ 
+Who is calling AnalysisCache.getMethodAnalysis?
+ - `grep "AnalysisCache.getMethodAnalysis" $file -A 1 | sort | uniq`
+ - ClassContext.getMethodAnalysis		= 168
+ - AnalysisFactory.getCFG			= 1
+ - AnalysisFactory.getIsNullValueDataflow	= 22
+ 
+ 
+Where are exceptions thrown from:
+ - `grep "At " $file -B 1 | grep -v "At" -A 1 | sort | uniq`
+
+ - At edu.umd.cs.findbugs.ba.AbstractFrameModelingVisitor.modelInstruction(AbstractFrameModelingVisitor.java:362)
+ - At edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.propagateDerefSetsToMergeInputValues(UnconditionalValueDerefAnalysis.java:859)
+ - At edu.umd.cs.findbugs.ba.Frame.getStackLocation(Frame.java:255)
+ - At edu.umd.cs.findbugs.ba.Frame.getStackValue(Frame.java:235)
+ - At edu.umd.cs.findbugs.ba.Frame.getStackValue(Frame.java:238)
+ - At edu.umd.cs.findbugs.ba.Frame.getTopValue(Frame.java:207)
+ - At edu.umd.cs.findbugs.ba.Hierarchy.isUncheckedException(Hierarchy.java:131)
+ - At edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.analyzeMethod(LoadOfKnownNullValue.java:127)
+ - At java.util.AbstractList$Itr.checkForComodification(AbstractList.java:372)
+   - first FB reference: At edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder.checkEdges(NullDerefAndRedundantComparisonFinder.java:377)
+ - At java.util.ArrayList.RangeCheck(ArrayList.java:547)
+   - first FB reference: At edu.umd.cs.findbugs.ba.Frame.getValue(Frame.java:516)
+
+Count of thrown exceptions:
+ - (AbstractFrameModelingVisitor.java:362)		4
+ - (UnconditionalValueDerefAnalysis.java:859)		25
+ - (Frame.java:255)					16
+ - (Frame.java:235)					20
+ - (Frame.java:238)					114
+ - (Frame.java:207)					3
+ - (Frame.java:516)					6
+ - (Hierarchy.java:131)					7
+ - (LoadOfKnownNullValue.java:127)			3
+ - (NullDerefAndRedundantComparisonFinder.java:377)	1
+ ----------------------------------------------------------
+ Total							199 (consistent with # exceptions)
+ 
+ Total coming from Frame.java = 16+20+114+3+6 = 159 = 80% of total
+ 
+ 
+ 
+
+ 
