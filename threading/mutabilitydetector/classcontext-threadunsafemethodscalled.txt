@@ -1,0 +1,6 @@
+      At edu.umd.cs.findbugs.ba.ClassContext.getCFG(ClassContext.java:301)
+      At edu.umd.cs.findbugs.ba.ClassContext.getIsNullValueDataflow(ClassContext.java:345)
+      At edu.umd.cs.findbugs.ba.ClassContext.getLiveLocalStoreDataflow(ClassContext.java:670)
+      At edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysis(ClassContext.java:1005)
+      At edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysisNoDataflowAnalysisException(ClassContext.java:990)
+      At edu.umd.cs.findbugs.ba.ClassContext.getUnconditionalValueDerefDataflow(ClassContext.java:829)

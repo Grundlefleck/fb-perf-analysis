@@ -1,0 +1,2429 @@
+
+2013-03-02 19:44:20
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (20.0-b11 mixed mode):
+
+"RMI TCP Connection(idle)" daemon prio=10 tid=0x00007f4f4c00b000 nid=0x2ca8 waiting on condition [0x00007f4f1d2c8000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007ad46bbc8> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:945)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2)-127.0.0.1" daemon prio=10 tid=0x00007f4f4c00a000 nid=0x2ca7 in Object.wait() [0x00007f4f1d3c8000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007ad6aacc8> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:417)
+	- locked <0x00000007ad6aacc8> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:209)
+	at com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:258)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1227)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1225)
+	at javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007ad4ae408> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"JMX server connection timeout 178" daemon prio=10 tid=0x00007f4f58573000 nid=0x2ca3 in Object.wait() [0x00007f4f1d4ca000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007ad561198> (a [I)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:150)
+	- locked <0x00000007ad561198> (a [I)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" daemon prio=10 tid=0x00007f4f584e4800 nid=0x2ca1 waiting on condition [0x00007f4f1d5cb000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007ad47e488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-127.0.0.1" daemon prio=10 tid=0x00007f4f4c007800 nid=0x2ca0 runnable [0x00007f4f1d7cd000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x00000007ad50a350> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007ad4ad910> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Accept-0" daemon prio=10 tid=0x00007f4f48086000 nid=0x2c9d runnable [0x00007f4f1d8ce000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+	- locked <0x00000007ad485650> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+	at java.net.ServerSocket.accept(ServerSocket.java:430)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:34)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" daemon prio=10 tid=0x00007f4f4c005800 nid=0x2c9b waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DefaultEncodingDetector" daemon prio=10 tid=0x00007f4f58511000 nid=0x2b7e waiting for monitor entry [0x00007f4f1dbda000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getProfiler(AnalysisCache.java:584)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:71)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf84f8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.ConfusionBetweenInheritedAndOuterMethod" daemon prio=10 tid=0x00007f4f5850f000 nid=0x2b7d waiting on condition [0x00007f4f1dcdb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105a898> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InvalidJUnitTest" daemon prio=10 tid=0x00007f4f5850d000 nid=0x2b7c waiting on condition [0x00007f4f1dddc000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105ac98> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindMismatchedWaitOrNotify" daemon prio=10 tid=0x00007f4f5850b000 nid=0x2b7b waiting on condition [0x00007f4f1dedd000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105b038> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InitializeNonnullFieldsInConstructor" daemon prio=10 tid=0x00007f4f58509000 nid=0x2b7a waiting on condition [0x00007f4f1dfde000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105b5f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.XMLFactoryBypass" daemon prio=10 tid=0x00007f4f58507000 nid=0x2b79 waiting on condition [0x00007f4f1e0df000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105ba88> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DumbMethods" daemon prio=10 tid=0x00007f4f58505000 nid=0x2b78 waiting on condition [0x00007f4f1e1e0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105c108> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUnsyncGet" daemon prio=10 tid=0x00007f4f58502800 nid=0x2b77 waiting on condition [0x00007f4f1e2e1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105c608> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" daemon prio=10 tid=0x00007f4f58500800 nid=0x2b76 waiting for monitor entry [0x00007f4f1e3e1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:317)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethodUsingSlashedClassName(XFactory.java:298)
+	at edu.umd.cs.findbugs.ba.XFactory.createReferencedXMethod(XFactory.java:468)
+	at edu.umd.cs.findbugs.OpcodeStack.processMethodCall(OpcodeStack.java:2470)
+	at edu.umd.cs.findbugs.OpcodeStack.sawOpcode(OpcodeStack.java:1896)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.afterOpcode(OpcodeStackDetector.java:75)
+	at edu.umd.cs.findbugs.visitclass.DismantleBytecode.visit(DismantleBytecode.java:809)
+	at edu.umd.cs.findbugs.detect.FindFieldSelfAssignment.visit(FindFieldSelfAssignment.java:49)
+	at edu.umd.cs.findbugs.visitclass.BetterVisitor.visitCode(BetterVisitor.java:217)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitCode(PreorderVisitor.java:223)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.visitCode(OpcodeStackDetector.java:62)
+	at org.apache.bcel.classfile.Code.accept(Code.java:133)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:289)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:369)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf68f8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.ComparatorIdiom" daemon prio=10 tid=0x00007f4f584fe800 nid=0x2b75 waiting on condition [0x00007f4f1e4e3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105cd78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindInconsistentSync2" daemon prio=10 tid=0x00007f4f584fc800 nid=0x2b74 waiting for monitor entry [0x00007f4f1e5e4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getClassAnalysis(ClassContext.java:1024)
+	at edu.umd.cs.findbugs.ba.ClassContext.getClassAnalysisNoException(ClassContext.java:1029)
+	at edu.umd.cs.findbugs.ba.ClassContext.getConstantPoolGen(ClassContext.java:311)
+	at edu.umd.cs.findbugs.SelfCalls.isSelfCall(SelfCalls.java:196)
+	at edu.umd.cs.findbugs.SelfCalls.scan(SelfCalls.java:176)
+	at edu.umd.cs.findbugs.SelfCalls.execute(SelfCalls.java:91)
+	at edu.umd.cs.findbugs.detect.FindInconsistentSync2.visitClassContext(FindInconsistentSync2.java:351)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf6310> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.HugeSharedStringConstants" daemon prio=10 tid=0x00007f4f584fa800 nid=0x2b73 waiting for monitor entry [0x00007f4f1e6e5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.setupVisitorForClass(PreorderVisitor.java:390)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:343)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf6010> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" daemon prio=10 tid=0x00007f4f584f8800 nid=0x2b72 waiting on condition [0x00007f4f1e7e6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105da08> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.ConfusedInheritance" daemon prio=10 tid=0x00007f4f584f6800 nid=0x2b71 waiting on condition [0x00007f4f1e8e7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105dce0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindEmptySynchronizedBlock" daemon prio=10 tid=0x00007f4f584f4800 nid=0x2b70 waiting on condition [0x00007f4f1e9e8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105e0d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindSelfComparison2" daemon prio=10 tid=0x00007f4f584f2800 nid=0x2b6f waiting for monitor entry [0x00007f4f1eae9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getClassAnalysis(ClassContext.java:1024)
+	at edu.umd.cs.findbugs.ba.ClassContext.getClassAnalysisNoException(ClassContext.java:1029)
+	at edu.umd.cs.findbugs.ba.ClassContext.getConstantPoolGen(ClassContext.java:311)
+	at edu.umd.cs.findbugs.detect.FindSelfComparison2.analyzeMethod(FindSelfComparison2.java:90)
+	at edu.umd.cs.findbugs.detect.FindSelfComparison2.visitClassContext(FindSelfComparison2.java:73)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf53f0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindTwoLockWait" daemon prio=10 tid=0x00007f4f584f0800 nid=0x2b6e waiting on condition [0x00007f4f1ebea000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105e638> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.SynchronizeAndNullCheckField" daemon prio=10 tid=0x00007f4f584ee800 nid=0x2b6d waiting on condition [0x00007f4f1eceb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b105ea38> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.Naming" daemon prio=10 tid=0x00007f4f584ed000 nid=0x2b6c waiting on condition [0x00007f4f1edec000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1126e60> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.CheckImmutableAnnotation" daemon prio=10 tid=0x00007f4f584da800 nid=0x2b6b waiting on condition [0x00007f4f1eeed000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1127138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.QuestionableBooleanAssignment" daemon prio=10 tid=0x00007f4f584eb000 nid=0x2b6a waiting on condition [0x00007f4f1efee000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1127538> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.LazyInit" daemon prio=10 tid=0x00007f4f584d6000 nid=0x2b69 waiting on condition [0x00007f4f1f0ef000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11277e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" daemon prio=10 tid=0x00007f4f584dd800 nid=0x2b68 waiting on condition [0x00007f4f1f1f0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1127bf0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindMaskedFields" daemon prio=10 tid=0x00007f4f584dc000 nid=0x2b67 waiting on condition [0x00007f4f1f2f1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11280a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindBugsSummaryStats" daemon prio=10 tid=0x00007f4f584d7800 nid=0x2b66 waiting on condition [0x00007f4f1f3f2000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1128310> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" daemon prio=10 tid=0x00007f4f584cc000 nid=0x2b65 waiting on condition [0x00007f4f1f4f3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1128710> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindNonShortCircuit" daemon prio=10 tid=0x00007f4f584ce800 nid=0x2b64 waiting on condition [0x00007f4f1f5f4000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1128c50> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.CloneIdiom" daemon prio=10 tid=0x00007f4f584ca000 nid=0x2b63 waiting on condition [0x00007f4f1f6f5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1129058> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.ReadReturnShouldBeChecked" daemon prio=10 tid=0x00007f4f584c8000 nid=0x2b62 waiting on condition [0x00007f4f1f7f6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1129588> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.BadlyOverriddenAdapter" daemon prio=10 tid=0x00007f4f584c4800 nid=0x2b61 waiting for monitor entry [0x00007f4f1f8f6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisCacheToRepositoryAdapter.loadClass(AnalysisCacheToRepositoryAdapter.java:87)
+	at org.apache.bcel.classfile.JavaClass.getSuperClass(JavaClass.java:830)
+	at edu.umd.cs.findbugs.detect.BadlyOverriddenAdapter.visit(BadlyOverriddenAdapter.java:53)
+	at edu.umd.cs.findbugs.visitclass.BetterVisitor.visitJavaClass(BetterVisitor.java:300)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.setupVisitorForClass(PreorderVisitor.java:395)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:343)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf2a68> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindFinalizeInvocations" daemon prio=10 tid=0x00007f4f584cd000 nid=0x2b60 waiting on condition [0x00007f4f1f9f8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1129fa8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.MutableStaticFields" daemon prio=10 tid=0x00007f4f584c0800 nid=0x2b5f waiting for monitor entry [0x00007f4f1faf9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.setupVisitorForClass(PreorderVisitor.java:390)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:343)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf2470> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.SuspiciousThreadInterrupted" daemon prio=10 tid=0x00007f4f584c6000 nid=0x2b5e waiting for monitor entry [0x00007f4f1fbfa000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getProfiler(AnalysisCache.java:584)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:71)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf2168> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.SynchronizeOnClassLiteralNotGetClass" daemon prio=10 tid=0x00007f4f584be800 nid=0x2b5d waiting on condition [0x00007f4f1fcfb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112b078> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindBadCast2" daemon prio=10 tid=0x00007f4f584ba800 nid=0x2b5c waiting for monitor entry [0x00007f4f1fdfc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:317)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:313)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:594)
+	at edu.umd.cs.findbugs.detect.FindBadCast2.analyzeMethod(FindBadCast2.java:219)
+	at edu.umd.cs.findbugs.detect.FindBadCast2.visitClassContext(FindBadCast2.java:108)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf1b68> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindBadForLoop" daemon prio=10 tid=0x00007f4f584b8800 nid=0x2b5b waiting on condition [0x00007f4f1fefd000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112baf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" daemon prio=10 tid=0x00007f4f584bd000 nid=0x2b5a waiting on condition [0x00007f4f1fffe000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112c160> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.CheckTypeQualifiers" daemon prio=10 tid=0x00007f4f584b7000 nid=0x2b59 waiting on condition [0x00007f4f2c1c0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112c3d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUnreleasedLock" daemon prio=10 tid=0x00007f4f584b3000 nid=0x2b58 waiting on condition [0x00007f4f2c2c1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112c778> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.WaitInLoop" daemon prio=10 tid=0x00007f4f584b2000 nid=0x2b57 waiting on condition [0x00007f4f2c3c2000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112cb80> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DontIgnoreResultOfPutIfAbsent" daemon prio=10 tid=0x00007f4f584af000 nid=0x2b56 waiting on condition [0x00007f4f2c4c3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112cf20> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.URLProblems" daemon prio=10 tid=0x00007f4f584b4000 nid=0x2b55 waiting for monitor entry [0x00007f4f2c5c3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:317)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethodUsingSlashedClassName(XFactory.java:298)
+	at edu.umd.cs.findbugs.ba.XFactory.createReferencedXMethod(XFactory.java:468)
+	at edu.umd.cs.findbugs.OpcodeStack.processMethodCall(OpcodeStack.java:2470)
+	at edu.umd.cs.findbugs.OpcodeStack.sawOpcode(OpcodeStack.java:1896)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.afterOpcode(OpcodeStackDetector.java:75)
+	at edu.umd.cs.findbugs.visitclass.DismantleBytecode.visit(DismantleBytecode.java:809)
+	at edu.umd.cs.findbugs.visitclass.BetterVisitor.visitCode(BetterVisitor.java:217)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitCode(PreorderVisitor.java:223)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.visitCode(OpcodeStackDetector.java:62)
+	at org.apache.bcel.classfile.Code.accept(Code.java:133)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:289)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:369)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaf0690> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" daemon prio=10 tid=0x00007f4f58542800 nid=0x2b54 waiting on condition [0x00007f4f2c6c5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112db68> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.UnnecessaryMath" daemon prio=10 tid=0x00007f4f58545800 nid=0x2b53 waiting on condition [0x00007f4f2c7c6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112df68> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" daemon prio=10 tid=0x00007f4f58441800 nid=0x2b52 waiting on condition [0x00007f4f2c8c7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112e490> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindSelfComparison" daemon prio=10 tid=0x00007f4f58541000 nid=0x2b51 waiting on condition [0x00007f4f2c9c8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b112e9c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" daemon prio=10 tid=0x00007f4f5853e800 nid=0x2b50 waiting on condition [0x00007f4f2cac9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1137028> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindJSR166LockMonitorenter" daemon prio=10 tid=0x00007f4f5853c800 nid=0x2b4f waiting on condition [0x00007f4f2cbca000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11372a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.UncallableMethodOfAnonymousClass" daemon prio=10 tid=0x00007f4f58443000 nid=0x2b4e waiting on condition [0x00007f4f2cccb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11376a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.MultithreadedInstanceAccess" daemon prio=10 tid=0x00007f4f58467800 nid=0x2b4d waiting on condition [0x00007f4f2cdcc000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1137ab0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.BadResultSetAccess" daemon prio=10 tid=0x00007f4f584ad000 nid=0x2b4a waiting on condition [0x00007f4f2cecd000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1137eb0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.SwitchFallthrough" daemon prio=10 tid=0x00007f4f584aa800 nid=0x2b48 waiting on condition [0x00007f4f2cfce000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11385b0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.IteratorIdioms" daemon prio=10 tid=0x00007f4f584a6800 nid=0x2b45 waiting on condition [0x00007f4f2d0cf000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11389b0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DontCatchIllegalMonitorStateException" daemon prio=10 tid=0x00007f4f584a4800 nid=0x2b43 waiting on condition [0x00007f4f2d1d0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1138c90> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" daemon prio=10 tid=0x00007f4f584a2800 nid=0x2b41 waiting for monitor entry [0x00007f4f2d2d1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getMethodAnalysis(AnalysisCache.java:332)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysis(ClassContext.java:1005)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysisNoException(ClassContext.java:979)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodGen(ClassContext.java:285)
+	at edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue.analyzeMethod(FindUseOfNonSerializableValue.java:119)
+	at edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue.visitClassContext(FindUseOfNonSerializableValue.java:89)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaedf08> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindFloatEquality" daemon prio=10 tid=0x00007f4f584a0800 nid=0x2b3f waiting for monitor entry [0x00007f4f2d3d1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:317)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethodUsingSlashedClassName(XFactory.java:298)
+	at edu.umd.cs.findbugs.ba.XFactory.createReferencedXMethod(XFactory.java:468)
+	at edu.umd.cs.findbugs.OpcodeStack.processMethodCall(OpcodeStack.java:2470)
+	at edu.umd.cs.findbugs.OpcodeStack.sawOpcode(OpcodeStack.java:1896)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.afterOpcode(OpcodeStackDetector.java:75)
+	at edu.umd.cs.findbugs.visitclass.DismantleBytecode.visit(DismantleBytecode.java:809)
+	at edu.umd.cs.findbugs.detect.FindFloatEquality.visit(FindFloatEquality.java:64)
+	at edu.umd.cs.findbugs.visitclass.BetterVisitor.visitCode(BetterVisitor.java:217)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitCode(PreorderVisitor.java:223)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.visitCode(OpcodeStackDetector.java:62)
+	at org.apache.bcel.classfile.Code.accept(Code.java:133)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:289)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:369)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaedc18> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.InefficientToArray" daemon prio=10 tid=0x00007f4f5849e000 nid=0x2b3d waiting on condition [0x00007f4f2d4d3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1139ab0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" daemon prio=10 tid=0x00007f4f5849c000 nid=0x2b3c waiting for monitor entry [0x00007f4f2d5d3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:538)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:445)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:456)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueFrameModelingVisitor.visitGETFIELD(IsNullValueFrameModelingVisitor.java:346)
+	at org.apache.bcel.generic.GETFIELD.accept(GETFIELD.java:80)
+	at edu.umd.cs.findbugs.ba.AbstractFrameModelingVisitor.analyzeInstruction(AbstractFrameModelingVisitor.java:84)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueFrameModelingVisitor.analyzeInstruction(IsNullValueFrameModelingVisitor.java:104)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transferInstruction(IsNullValueAnalysis.java:324)
+	- locked <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transferInstruction(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.transfer(AbstractDataflowAnalysis.java:131)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transfer(IsNullValueAnalysis.java:270)
+	- locked <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transfer(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.getFactAtLocation(AbstractDataflowAnalysis.java:84)
+	at edu.umd.cs.findbugs.ba.Dataflow.getFactAtLocation(Dataflow.java:487)
+	at edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.analyzeMethod(LoadOfKnownNullValue.java:115)
+	at edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.visitClassContext(LoadOfKnownNullValue.java:52)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaed628> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.MutableLock" daemon prio=10 tid=0x00007f4f5849a000 nid=0x2b3a waiting for monitor entry [0x00007f4f2d6d5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getClassAnalysis(AnalysisCache.java:243)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.setupVisitorForClass(PreorderVisitor.java:390)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:343)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaed340> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindReturnRef" daemon prio=10 tid=0x00007f4f58498000 nid=0x2b38 waiting on condition [0x00007f4f2d7d6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113a8a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NumberConstructor" daemon prio=10 tid=0x00007f4f58495800 nid=0x2b36 waiting for monitor entry [0x00007f4f2d8d6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethod(XFactory.java:317)
+	at edu.umd.cs.findbugs.ba.XFactory.createXMethodUsingSlashedClassName(XFactory.java:298)
+	at edu.umd.cs.findbugs.ba.XFactory.createReferencedXMethod(XFactory.java:468)
+	at edu.umd.cs.findbugs.OpcodeStack.pushByInvoke(OpcodeStack.java:3055)
+	at edu.umd.cs.findbugs.OpcodeStack.processMethodCall(OpcodeStack.java:2408)
+	at edu.umd.cs.findbugs.OpcodeStack.sawOpcode(OpcodeStack.java:1896)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.afterOpcode(OpcodeStackDetector.java:75)
+	at edu.umd.cs.findbugs.visitclass.DismantleBytecode.visit(DismantleBytecode.java:809)
+	at edu.umd.cs.findbugs.detect.NumberConstructor.visit(NumberConstructor.java:99)
+	at edu.umd.cs.findbugs.visitclass.BetterVisitor.visitCode(BetterVisitor.java:217)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitCode(PreorderVisitor.java:223)
+	at edu.umd.cs.findbugs.bcel.OpcodeStackDetector.visitCode(OpcodeStackDetector.java:62)
+	at org.apache.bcel.classfile.Code.accept(Code.java:133)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.doVisitMethod(PreorderVisitor.java:289)
+	at edu.umd.cs.findbugs.visitclass.PreorderVisitor.visitJavaClass(PreorderVisitor.java:369)
+	at org.apache.bcel.classfile.JavaClass.accept(JavaClass.java:214)
+	at edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+	at edu.umd.cs.findbugs.detect.NumberConstructor.visitClassContext(NumberConstructor.java:93)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaaecd68> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" daemon prio=10 tid=0x00007f4f58493800 nid=0x2b35 waiting on condition [0x00007f4f2d9d8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113b468> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DroppedException" daemon prio=10 tid=0x00007f4f58491000 nid=0x2b34 waiting on condition [0x00007f4f2dad9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113b990> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.IDivResultCastToDouble" daemon prio=10 tid=0x00007f4f58490000 nid=0x2b32 waiting on condition [0x00007f4f2dbda000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113beb0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation" daemon prio=10 tid=0x00007f4f5848d800 nid=0x2b30 waiting on condition [0x00007f4f2dcdb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113c128> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DontUseEnum" daemon prio=10 tid=0x00007f4f5848b800 nid=0x2b2f waiting on condition [0x00007f4f2dddc000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113c400> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.RedundantInterfaces" daemon prio=10 tid=0x00007f4f5848a000 nid=0x2b2d waiting on condition [0x00007f4f2dedd000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113c6d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.BooleanReturnNull" daemon prio=10 tid=0x00007f4f58488000 nid=0x2b2c waiting on condition [0x00007f4f2dfde000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113cbf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InstantiateStaticClass" daemon prio=10 tid=0x00007f4f58548800 nid=0x2b2b waiting on condition [0x00007f4f2e0df000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113cff0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.AtomicityProblem" daemon prio=10 tid=0x00007f4f58444800 nid=0x2b29 waiting on condition [0x00007f4f2e1e0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113d3f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" daemon prio=10 tid=0x00007f4f58468800 nid=0x2b27 waiting on condition [0x00007f4f2e2e1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113d9c0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DoInsideDoPrivileged" daemon prio=10 tid=0x00007f4f58465800 nid=0x2b25 waiting on condition [0x00007f4f2e3e2000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113ded8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.CrossSiteScripting" daemon prio=10 tid=0x00007f4f58464000 nid=0x2b23 waiting on condition [0x00007f4f2e4e3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113e520> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DuplicateBranches" daemon prio=10 tid=0x00007f4f58462000 nid=0x2b21 waiting on condition [0x00007f4f2e5e4000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113e830> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.VarArgsProblems" daemon prio=10 tid=0x00007f4f58460000 nid=0x2b20 waiting on condition [0x00007f4f2e6e5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b113edc8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.WrongMapIterator" daemon prio=10 tid=0x00007f4f5845d000 nid=0x2b1e waiting on condition [0x00007f4f2e7e6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1147320> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindSpinLoop" daemon prio=10 tid=0x00007f4f5845b000 nid=0x2b1c waiting on condition [0x00007f4f2e8e7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1147720> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.LostLoggerDueToWeakReference" daemon prio=10 tid=0x00007f4f58459000 nid=0x2b1a waiting on condition [0x00007f4f2e9e8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1147d60> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUncalledPrivateMethods" daemon prio=10 tid=0x00007f4f58457800 nid=0x2b19 waiting on condition [0x00007f4f2eae9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1148168> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InitializationChain" daemon prio=10 tid=0x00007f4f58455800 nid=0x2b16 waiting on condition [0x00007f4f2ebea000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1148900> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUnconditionalWait" daemon prio=10 tid=0x00007f4f58453000 nid=0x2b14 waiting on condition [0x00007f4f2eceb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1148cf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindNakedNotify" daemon prio=10 tid=0x00007f4f58447800 nid=0x2b12 waiting on condition [0x00007f4f2edec000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b11490f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.VolatileUsage" daemon prio=10 tid=0x00007f4f58578000 nid=0x2b11 waiting on condition [0x00007f4f2eeed000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1149620> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.StartInConstructor" daemon prio=10 tid=0x00007f4f58537000 nid=0x2b0f waiting on condition [0x00007f4f2efee000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b1149b38> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteNonnullReturnValues" daemon prio=10 tid=0x00007f4f58535000 nid=0x2b0c waiting for monitor entry [0x00007f4f2f0ef000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:218)
+	- waiting to lock <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.getFactAtLocation(AbstractDataflowAnalysis.java:82)
+	at edu.umd.cs.findbugs.ba.Dataflow.getFactAtLocation(Dataflow.java:487)
+	at edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.analyzeMethod(BuildNonnullReturnDatabase.java:94)
+	at edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.considerMethod(BuildNonnullReturnDatabase.java:72)
+	at edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.visitClassContext(BuildNonnullReturnDatabase.java:65)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaae8420> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.AppendingToAnObjectOutputStream" daemon prio=10 tid=0x00007f4f58533800 nid=0x2b0a waiting on condition [0x00007f4f2f1f0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114a1b8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindPuzzlers" daemon prio=10 tid=0x00007f4f58581800 nid=0x2b08 waiting on condition [0x00007f4f2f2f1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114a708> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation" daemon prio=10 tid=0x00007f4f5857f800 nid=0x2b06 waiting on condition [0x00007f4f2f3f2000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114ab08> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUninitializedGet" daemon prio=10 tid=0x00007f4f5853a800 nid=0x2b05 waiting on condition [0x00007f4f2f4f3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114b0f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindOpenStream" daemon prio=10 tid=0x00007f4f58449800 nid=0x2b03 waiting on condition [0x00007f4f2f5f4000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114b4c8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.StringConcatenation" daemon prio=10 tid=0x00007f4f58586000 nid=0x2b01 waiting on condition [0x00007f4f2f6f5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114b958> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.DumbMethodInvocations" daemon prio=10 tid=0x00007f4f5843e800 nid=0x2af2 waiting on condition [0x00007f4f2f7f6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b114bcf8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" daemon prio=10 tid=0x00007f4f5843c000 nid=0x2af0 waiting on condition [0x00007f4f2f8f7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a1408> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.StaticCalendarDetector" daemon prio=10 tid=0x00007f4f5843a800 nid=0x2aef waiting on condition [0x00007f4f2f9f8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a19d0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InfiniteLoop" daemon prio=10 tid=0x00007f4f58584000 nid=0x2aee waiting on condition [0x00007f4f2faf9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a2010> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindSqlInjection" daemon prio=10 tid=0x00007f4f5857d800 nid=0x2aed waiting on condition [0x00007f4f2fbfa000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a23b8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindLocalSelfAssignment2" daemon prio=10 tid=0x00007f4f5856b800 nid=0x2aec waiting on condition [0x00007f4f2fcfb000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a27f0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.PreferZeroLengthArrays" daemon prio=10 tid=0x00007f4f5857b800 nid=0x2aeb waiting on condition [0x00007f4f2fdfc000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a2c20> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs" daemon prio=10 tid=0x00007f4f58569800 nid=0x2aea waiting for monitor entry [0x00007f4f2fefc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:218)
+	- waiting to lock <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.getFactAtLocation(AbstractDataflowAnalysis.java:82)
+	at edu.umd.cs.findbugs.ba.Dataflow.getFactAtLocation(Dataflow.java:487)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.checkUnconditionalDerefDatabase(UnconditionalValueDerefAnalysis.java:338)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.transferInstruction(UnconditionalValueDerefAnalysis.java:291)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.transferInstruction(UnconditionalValueDerefAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.transfer(AbstractDataflowAnalysis.java:131)
+	at edu.umd.cs.findbugs.ba.Dataflow.execute(Dataflow.java:365)
+	at edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory.analyze(UnconditionalValueDerefDataflowFactory.java:81)
+	at edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory.analyze(UnconditionalValueDerefDataflowFactory.java:1)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.analyzeMethod(AnalysisCache.java:387)
+	- locked <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getMethodAnalysis(AnalysisCache.java:340)
+	- locked <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysis(ClassContext.java:1005)
+	at edu.umd.cs.findbugs.ba.ClassContext.getUnconditionalValueDerefDataflow(ClassContext.java:829)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.analyzeMethod(BuildUnconditionalParamDerefDatabase.java:115)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.considerMethod(BuildUnconditionalParamDerefDatabase.java:104)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.visitClassContext(BuildUnconditionalParamDerefDatabase.java:91)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaae5a48> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.BadUseOfReturnValue" daemon prio=10 tid=0x00007f4f5842c000 nid=0x2ae9 waiting on condition [0x00007f4f2fffe000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a33d8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.IncompatMask" daemon prio=10 tid=0x00007f4f5842a800 nid=0x2ae8 waiting on condition [0x00007f4f34193000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a37e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant" daemon prio=10 tid=0x00007f4f58430800 nid=0x2ae7 waiting on condition [0x00007f4f34294000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a3ea8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.UnreadFields" daemon prio=10 tid=0x00007f4f58276000 nid=0x2ae6 waiting on condition [0x00007f4f34395000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a43f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.SuperfluousInstanceOf" daemon prio=10 tid=0x00007f4f58274000 nid=0x2ae5 waiting on condition [0x00007f4f34496000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a47f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindDoubleCheck" daemon prio=10 tid=0x00007f4f5856d000 nid=0x2ae4 waiting on condition [0x00007f4f34597000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a4d38> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.InconsistentAnnotations" daemon prio=10 tid=0x00007f4f58277800 nid=0x2ae3 waiting on condition [0x00007f4f34698000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a6fd0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindDeadLocalStores" daemon prio=10 tid=0x00007f4f5856f000 nid=0x2ae1 waiting on condition [0x00007f4f34799000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a7248> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.SerializableIdiom" daemon prio=10 tid=0x00007f4f58271800 nid=0x2ae0 waiting for monitor entry [0x00007f4f3489a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getProfiler(AnalysisCache.java:584)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:71)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaae3e80> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.FindRunInvocations" daemon prio=10 tid=0x00007f4f583fe000 nid=0x2adf waiting on condition [0x00007f4f3499b000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a7de8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindNullDeref" daemon prio=10 tid=0x00007f4f583fc800 nid=0x2ade waiting for monitor entry [0x00007f4f34a9c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getMethodAnalysis(AnalysisCache.java:332)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysis(ClassContext.java:1005)
+	at edu.umd.cs.findbugs.ba.ClassContext.getValueNumberDataflow(ClassContext.java:334)
+	at edu.umd.cs.findbugs.detect.FindNullDeref.analyzeMethod(FindNullDeref.java:262)
+	at edu.umd.cs.findbugs.detect.FindNullDeref.visitClassContext(FindNullDeref.java:205)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- <0x00000007aaae38a0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"edu.umd.cs.findbugs.detect.InheritanceUnsafeGetResource" daemon prio=10 tid=0x00007f4f583fb000 nid=0x2add waiting on condition [0x00007f4f34b9d000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a85b0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FinalizerNullsFields" daemon prio=10 tid=0x00007f4f583f9000 nid=0x2adc waiting on condition [0x00007f4f34c9e000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a8ad0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindSleepWithLockHeld" daemon prio=10 tid=0x00007f4f583f7800 nid=0x2adb waiting on condition [0x00007f4f34d9f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013a8e70> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.RepeatedConditionals" daemon prio=10 tid=0x00007f4f5847f800 nid=0x2ada waiting on condition [0x00007f4f34ea0000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007013ab328> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FormatStringChecker" daemon prio=10 tid=0x00007f4f5847f000 nid=0x2ad9 waiting on condition [0x00007f4f34fa1000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b10583e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FindUselessControlFlow" daemon prio=10 tid=0x00007f4f5847e000 nid=0x2ad8 waiting on condition [0x00007f4f350a2000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007b10578a0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteNonNullAnnotations" daemon prio=10 tid=0x00007f4f5854a800 nid=0x2ad7 waiting on condition [0x00007f4f351a3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700b96df8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.FieldItemSummary" daemon prio=10 tid=0x00007f4f5855e000 nid=0x2ad6 waiting on condition [0x00007f4f352a4000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700b48628> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.ExplicitSerialization" daemon prio=10 tid=0x00007f4f5855c000 nid=0x2ad5 waiting on condition [0x00007f4f353a5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700ace270> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteCheckReturnValueAnnotations" daemon prio=10 tid=0x00007f4f5852a800 nid=0x2ad3 waiting on condition [0x00007f4f35d7d000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700acbce8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.ReflectiveClasses" daemon prio=10 tid=0x00007f4f58529000 nid=0x2ad2 waiting on condition [0x00007f4f365c8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700ec9aa8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" daemon prio=10 tid=0x00007f4f58527800 nid=0x2ad1 waiting on condition [0x00007f4f364c7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700f4a0f0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteAnnotationRetention" daemon prio=10 tid=0x00007f4f58527000 nid=0x2ad0 waiting on condition [0x00007f4f35b7b000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700f9c818> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" daemon prio=10 tid=0x00007f4f58551000 nid=0x2acf waiting on condition [0x00007f4f35c7c000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700f08c40> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteJCIPAnnotation" daemon prio=10 tid=0x00007f4f58550000 nid=0x2ace waiting on condition [0x00007f4f35833000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700ee4a78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.NoteSuppressedWarnings" daemon prio=10 tid=0x00007f4f58425000 nid=0x2acd waiting on condition [0x00007f4f35732000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000070106cfe8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.Methods" daemon prio=10 tid=0x00007f4f58423800 nid=0x2acc waiting on condition [0x00007f4f35a7a000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700ee2cc0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"edu.umd.cs.findbugs.detect.CalledMethods" daemon prio=10 tid=0x00007f4f583db800 nid=0x2acb waiting on condition [0x00007f4f36f89000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700dad8e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Analysis Thread" daemon prio=10 tid=0x00007f4f3000b800 nid=0x2aca waiting on condition [0x00007f4f35934000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007aab13030> (a java.util.concurrent.FutureTask$Sync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:811)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:969)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:218)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at edu.umd.cs.findbugs.DetectorExecutor.waitToCompleteDetection(DetectorExecutor.java:78)
+	at edu.umd.cs.findbugs.FindBugs2.analyzeApplication(FindBugs2.java:1208)
+	at edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:282)
+	at edu.umd.cs.findbugs.gui2.BugLoader.doAnalysis(BugLoader.java:100)
+	at edu.umd.cs.findbugs.gui2.AnalyzingDialog$AnalysisThread.run(AnalyzingDialog.java:242)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-4" daemon prio=10 tid=0x00007f4f38256000 nid=0x2ac9 in Object.wait() [0x00007f4f36ded000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000700a1f420> (a edu.umd.cs.findbugs.gui2.AnalyzingDialog$AnalysisThread)
+	at java.lang.Thread.join(Thread.java:1186)
+	- locked <0x0000000700a1f420> (a edu.umd.cs.findbugs.gui2.AnalyzingDialog$AnalysisThread)
+	at java.lang.Thread.join(Thread.java:1239)
+	at edu.umd.cs.findbugs.gui2.AnalyzingDialog.<init>(AnalyzingDialog.java:114)
+	at edu.umd.cs.findbugs.gui2.BugLoader.redoAnalysisKeepComments(BugLoader.java:320)
+	at edu.umd.cs.findbugs.gui2.MainFrame$2.run(MainFrame.java:622)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" prio=10 tid=0x00007f4f6c00b000 nid=0x2a95 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"TimerQueue" daemon prio=10 tid=0x00007f4f38301800 nid=0x2ab7 in Object.wait() [0x00007f4f36aea000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007009b2590> (a javax.swing.TimerQueue)
+	at javax.swing.TimerQueue.run(TimerQueue.java:232)
+	- locked <0x00000007009b2590> (a javax.swing.TimerQueue)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Source code display thread" daemon prio=10 tid=0x00007f4f6c7e0800 nid=0x2ab4 waiting on condition [0x00007f4f366c9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000700723940> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at edu.umd.cs.findbugs.gui2.SourceCodeDisplay.run(SourceCodeDisplay.java:122)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Timer-0" daemon prio=10 tid=0x00007f4f6c7cf000 nid=0x2ab3 in Object.wait() [0x00007f4f367ca000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007003f3138> (a java.util.TaskQueue)
+	at java.util.TimerThread.mainLoop(Timer.java:509)
+	- locked <0x00000007003f3138> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Timer.java:462)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-EventQueue-0" prio=10 tid=0x00007f4f6c7c5000 nid=0x2ab1 in Object.wait() [0x00007f4f36bea000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000700101b50> (a java.awt.EventQueue)
+	at java.lang.Object.wait(Object.java:485)
+	at java.awt.EventQueue.getNextEvent(EventQueue.java:484)
+	- locked <0x0000000700101b50> (a java.awt.EventQueue)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:236)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:178)
+	at java.awt.Dialog$1.run(Dialog.java:1046)
+	at java.awt.Dialog$3.run(Dialog.java:1098)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.Dialog.show(Dialog.java:1096)
+	at java.awt.Component.show(Component.java:1584)
+	at java.awt.Component.setVisible(Component.java:1536)
+	at java.awt.Window.setVisible(Window.java:842)
+	at java.awt.Dialog.setVisible(Dialog.java:986)
+	at edu.umd.cs.findbugs.gui2.AnalyzingDialog$4.run(AnalyzingDialog.java:157)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:641)
+	at java.awt.EventQueue.access$000(EventQueue.java:84)
+	at java.awt.EventQueue$1.run(EventQueue.java:602)
+	at java.awt.EventQueue$1.run(EventQueue.java:600)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:611)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-Shutdown" prio=10 tid=0x00007f4f6c7bd000 nid=0x2ab0 in Object.wait() [0x00007f4f36cec000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000070030c840> (a java.lang.Object)
+	at java.lang.Object.wait(Object.java:485)
+	at sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:265)
+	- locked <0x000000070030c840> (a java.lang.Object)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"AWT-XAWT" daemon prio=10 tid=0x00007f4f6c763800 nid=0x2aad runnable [0x00007f4f370fc000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.awt.X11.XToolkit.waitForEvents(Native Method)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:579)
+	at sun.awt.X11.XToolkit.run(XToolkit.java:543)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Java2D Disposer" daemon prio=10 tid=0x00007f4f6c709800 nid=0x2aac in Object.wait() [0x00007f4f37839000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000070088ac50> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x000000070088ac50> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at sun.java2d.Disposer.run(Disposer.java:127)
+	at java.lang.Thread.run(Thread.java:662)
+
+   Locked ownable synchronizers:
+	- None
+
+"Low Memory Detector" daemon prio=10 tid=0x00007f4f6c0a0800 nid=0x2aa8 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" daemon prio=10 tid=0x00007f4f6c09e800 nid=0x2aa7 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" daemon prio=10 tid=0x00007f4f6c09b800 nid=0x2aa6 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"JDWP Command Reader" daemon prio=10 tid=0x00007f4f50001000 nid=0x2aa4 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"JDWP Event Helper Thread" daemon prio=10 tid=0x00007f4f6c099000 nid=0x2aa3 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"JDWP Transport Listener: dt_socket" daemon prio=10 tid=0x00007f4f6c095800 nid=0x2aa0 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" daemon prio=10 tid=0x00007f4f6c089000 nid=0x2a9e runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" daemon prio=10 tid=0x00007f4f6c06d800 nid=0x2a9d in Object.wait() [0x00007f4f70827000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007000af2a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x00000007000af2a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:159)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" daemon prio=10 tid=0x00007f4f6c06b800 nid=0x2a9c in Object.wait() [0x00007f4f70928000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000700011fd0> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:485)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+	- locked <0x0000000700011fd0> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" prio=10 tid=0x00007f4f6c065000 nid=0x2a9b runnable 
+
+"GC task thread#0 (ParallelGC)" prio=10 tid=0x00007f4f6c01e000 nid=0x2a99 runnable 
+
+"GC task thread#1 (ParallelGC)" prio=10 tid=0x00007f4f6c020000 nid=0x2a9a runnable 
+
+"VM Periodic Task Thread" prio=10 tid=0x00007f4f6c0ab000 nid=0x2aa9 waiting on condition 
+
+JNI global references: 7571
+
+
+Found one Java-level deadlock:
+=============================
+"edu.umd.cs.findbugs.detect.DefaultEncodingDetector":
+  waiting to lock monitor 0x00007f4f54009138 (object 0x000000070028a260, a edu.umd.cs.findbugs.classfile.impl.AnalysisCache),
+  which is held by "edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs"
+"edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs":
+  waiting to lock monitor 0x00007f4f3c006b68 (object 0x00000007acc81618, a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis),
+  which is held by "edu.umd.cs.findbugs.detect.LoadOfKnownNullValue"
+"edu.umd.cs.findbugs.detect.LoadOfKnownNullValue":
+  waiting to lock monitor 0x00007f4f54009138 (object 0x000000070028a260, a edu.umd.cs.findbugs.classfile.impl.AnalysisCache),
+  which is held by "edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs"
+
+Java stack information for the threads listed above:
+===================================================
+"edu.umd.cs.findbugs.detect.DefaultEncodingDetector":
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getProfiler(AnalysisCache.java:584)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:71)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+"edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs":
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:218)
+	- waiting to lock <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.createFact(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.getFactAtLocation(AbstractDataflowAnalysis.java:82)
+	at edu.umd.cs.findbugs.ba.Dataflow.getFactAtLocation(Dataflow.java:487)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.checkUnconditionalDerefDatabase(UnconditionalValueDerefAnalysis.java:338)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.transferInstruction(UnconditionalValueDerefAnalysis.java:291)
+	at edu.umd.cs.findbugs.ba.deref.UnconditionalValueDerefAnalysis.transferInstruction(UnconditionalValueDerefAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.transfer(AbstractDataflowAnalysis.java:131)
+	at edu.umd.cs.findbugs.ba.Dataflow.execute(Dataflow.java:365)
+	at edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory.analyze(UnconditionalValueDerefDataflowFactory.java:81)
+	at edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory.analyze(UnconditionalValueDerefDataflowFactory.java:1)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.analyzeMethod(AnalysisCache.java:387)
+	- locked <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getMethodAnalysis(AnalysisCache.java:340)
+	- locked <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.ba.ClassContext.getMethodAnalysis(ClassContext.java:1005)
+	at edu.umd.cs.findbugs.ba.ClassContext.getUnconditionalValueDerefDataflow(ClassContext.java:829)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.analyzeMethod(BuildUnconditionalParamDerefDatabase.java:115)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.considerMethod(BuildUnconditionalParamDerefDatabase.java:104)
+	at edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.visitClassContext(BuildUnconditionalParamDerefDatabase.java:91)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+"edu.umd.cs.findbugs.detect.LoadOfKnownNullValue":
+	at edu.umd.cs.findbugs.classfile.impl.AnalysisCache.getAnalysisLocals(AnalysisCache.java:91)
+	- waiting to lock <0x000000070028a260> (a edu.umd.cs.findbugs.classfile.impl.AnalysisCache)
+	at edu.umd.cs.findbugs.AnalysisLocal.getMap(AnalysisLocal.java:32)
+	at edu.umd.cs.findbugs.AnalysisLocal.get(AnalysisLocal.java:37)
+	at edu.umd.cs.findbugs.ba.AnalysisContext.currentXFactory(AnalysisContext.java:170)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:538)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:445)
+	at edu.umd.cs.findbugs.ba.XFactory.createXField(XFactory.java:456)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueFrameModelingVisitor.visitGETFIELD(IsNullValueFrameModelingVisitor.java:346)
+	at org.apache.bcel.generic.GETFIELD.accept(GETFIELD.java:80)
+	at edu.umd.cs.findbugs.ba.AbstractFrameModelingVisitor.analyzeInstruction(AbstractFrameModelingVisitor.java:84)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueFrameModelingVisitor.analyzeInstruction(IsNullValueFrameModelingVisitor.java:104)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transferInstruction(IsNullValueAnalysis.java:324)
+	- locked <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transferInstruction(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.transfer(AbstractDataflowAnalysis.java:131)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transfer(IsNullValueAnalysis.java:270)
+	- locked <0x00000007acc81618> (a edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis)
+	at edu.umd.cs.findbugs.ba.npe.IsNullValueAnalysis.transfer(IsNullValueAnalysis.java:1)
+	at edu.umd.cs.findbugs.ba.AbstractDataflowAnalysis.getFactAtLocation(AbstractDataflowAnalysis.java:84)
+	at edu.umd.cs.findbugs.ba.Dataflow.getFactAtLocation(Dataflow.java:487)
+	at edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.analyzeMethod(LoadOfKnownNullValue.java:115)
+	at edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.visitClassContext(LoadOfKnownNullValue.java:52)
+	at edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
+	at edu.umd.cs.findbugs.DetectorExecutor$2.run(DetectorExecutor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+Found 1 deadlock.
+

@@ -1,0 +1,31 @@
+Detectors that throw exceptions:
+
+      At edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.visitClassContext(BuildNonnullReturnDatabase.java:65)
+      At edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.visitClassContext(BuildUnconditionalParamDerefDatabase.java:91)
+      At edu.umd.cs.findbugs.detect.FindBadCast2.visitClassContext(FindBadCast2.java:108)
+      At edu.umd.cs.findbugs.detect.FindDeadLocalStores.visitClassContext(FindDeadLocalStores.java:186)
+      At edu.umd.cs.findbugs.detect.FindJSR166LockMonitorenter.visitClassContext(FindJSR166LockMonitorenter.java:104)
+      At edu.umd.cs.findbugs.detect.FindNullDeref.visitClassContext(FindNullDeref.java:205)
+      At edu.umd.cs.findbugs.detect.FindRefComparison.visitClassContext(FindRefComparison.java:691)
+      At edu.umd.cs.findbugs.detect.FindSelfComparison2.visitClassContext(FindSelfComparison2.java:73)
+      At edu.umd.cs.findbugs.detect.FindSqlInjection.visitClassContext(FindSqlInjection.java:169)
+      At edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer.visitClassContext(FindUnrelatedTypesInGenericContainer.java:257)
+      At edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.visitClassContext(LoadOfKnownNullValue.java:52)
+      
+Detectors that throw exceptions from calling:
+  ClassContext.getIsNullValueDataflow(ClassContext.java:345)
+  
+      At edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.analyzeMethod(BuildNonnullReturnDatabase.java:85)
+      At edu.umd.cs.findbugs.detect.FindBadCast2.analyzeMethod(FindBadCast2.java:158)
+      At edu.umd.cs.findbugs.detect.FindNullDeref.analyzeMethod(FindNullDeref.java:260)
+      At edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.analyzeMethod(LoadOfKnownNullValue.java:72)
+      
+Detectors that throw exceptions from calling:
+  Dataflow.getFactAtLocation(Dataflow.java:487)
+
+      At edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.visitClassContext(BuildNonnullReturnDatabase.java:65)
+      At edu.umd.cs.findbugs.detect.FindNullDeref.visitClassContext(FindNullDeref.java:205)
+      At edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.visitClassContext(LoadOfKnownNullValue.java:52)
+      
+
+
