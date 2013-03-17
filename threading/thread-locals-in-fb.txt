@@ -1,0 +1,31 @@
+Thread locals that exist in FindBugs:
+
+findbugs
+src
+java
+edu
+umd
+cs
+findbugs
+ba
+jsr305
+TypeQualifierAnnotation.java
+60: private static ThreadLocal<DualKeyHashMap<TypeQualifierValue<?>, When, TypeQualifierAnnotation>> instance = new ThreadLocal<DualKeyHashMap<TypeQualifierValue<?>, When, TypeQualifierAnnotation>>() { 
+TypeQualifierApplications.java
+96: private static ThreadLocal<Data> instance = new ThreadLocal<Data>() { 
+TypeQualifierValue.java
+201: private static ThreadLocal<Data> instance = new ThreadLocal<Data>() { 
+AnalysisContext.java
+110: private static ThreadLocal<AnalysisContext> currentAnalysisContext = new ThreadLocal<AnalysisContext>() { 
+ObjectTypeFactory.java
+35: private static ThreadLocal<Map<String, ObjectType>> instance = new ThreadLocal<Map<String, ObjectType>>() { 
+classfile
+DescriptorFactory.java
+50: private static ThreadLocal<DescriptorFactory> instanceThreadLocal = new ThreadLocal<DescriptorFactory>() { 
+io
+IO.java (2 matches)
+56: static ThreadLocal<byte[]> myByteBuf = new ThreadLocal<byte[]>() { 
+63: static ThreadLocal<char[]> myCharBuf = new ThreadLocal<char[]>() { 
+SourceLineAnnotation.java (2 matches)
+822: static final ThreadLocal<Project> myProject = new ThreadLocal<Project>(); 
+824: static final ThreadLocal<String> relativeSourceBase = new ThreadLocal<String>(); 
