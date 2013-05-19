@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3-dev-20130519" sequence="1" timestamp="1362515489000" analysisTimestamp="1368957199399" release="">
+  <Project projectName="MutabilityDetector">
+    <Jar>/home/graham/dev/source/mutability_detector/MutabilityDetector/target/classes</Jar>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/mojo/findbugs-maven-plugin/2.4.0/findbugs-maven-plugin-2.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/gmaven-mojo/1.3/gmaven-mojo-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.3/gmaven-runtime-api-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/feature/gmaven-feature-api/1.3/gmaven-feature-api-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-1.5/1.3/gmaven-runtime-1.5-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/feature/gmaven-feature-support/1.3/gmaven-feature-support-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/groovy/groovy-all-minimal/1.5.8/groovy-all-minimal-1.5.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/ant/ant/1.7.1/ant-1.7.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/gmaven-plugin/1.3/gmaven-plugin-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.3/gmaven-runtime-loader-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.3/gmaven-runtime-support-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/sonatype/gshell/gshell-io/2.0/gshell-io-2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/thoughtworks/qdox/qdox/1.10/qdox-1.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/sonatype/gossip/gossip/1.2/gossip-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.1/maven-reporting-impl-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/groovy/groovy-all/1.7.4/groovy-all-1.7.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-core/1.1.3/doxia-core-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1.3/doxia-logging-api-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.1.3/doxia-sink-api-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.1.3/doxia-decoration-model-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.1.3/doxia-site-renderer-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.1.3/doxia-module-xhtml-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.1.3/doxia-module-fml-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/apache/maven/shared/maven-doxia-tools/1.2.1/maven-doxia-tools-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/findbugs-ant/2.0.0/findbugs-ant-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/findbugs/2.0.0/findbugs-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/bcel/2.0.0/bcel-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/jsr305/2.0.0/jsr305-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/jFormatString/2.0.0/jFormatString-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/xom/xom/1.0/xom-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/asm/asm/3.3/asm-3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/asm/asm-tree/3.3/asm-tree-3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/asm/asm-commons/3.3/asm-commons-3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/jgoodies/plastic/1.2.0/plastic-1.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-4/plexus-resources-1.0-alpha-4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/hamcrest/hamcrest-core/1.2/hamcrest-core-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/classpath-explorer/classpath-explorer/1.0/classpath-explorer-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/org/ow2/asm/asm-debug-all/4.0/asm-debug-all-4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/graham/.m2/repository/com/google/guava/guava/12.0/guava-12.0.jar</AuxClasspathEntry>
+    <SrcDir>/home/graham/dev/source/mutability_detector/MutabilityDetector/src/main/java</SrcDir>
+    <WrkDir>/home/graham/dev/source/mutability_detector/MutabilityDetector/target</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Mar 2013 20:31:29 +0000" total_classes="144" referenced_classes="317" total_bugs="0" total_size="2891" num_packages="12" vm_version="20.0-b11" cpu_seconds="61.05" clock_seconds="71.88" peak_mbytes="231.08" alloc_mbytes="455.12" gc_seconds="0.31">
+    <PackageStats package="org.mutabilitydetector" total_bugs="0" total_types="21" total_size="416">
+      <ClassStats class="org.mutabilitydetector.AnalysisErrorReporter" sourceFile="AnalysisErrorReporter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisErrorReporter$AnalysisError" sourceFile="AnalysisErrorReporter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisResult" sourceFile="AnalysisResult.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisResult$1" sourceFile="AnalysisResult.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisResult$2" sourceFile="AnalysisResult.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisResult$3" sourceFile="AnalysisResult.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.AnalysisSession" sourceFile="AnalysisSession.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Configuration" sourceFile="Configuration.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.ConfigurationBuilder" sourceFile="ConfigurationBuilder.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.ConfigurationBuilder$1" sourceFile="ConfigurationBuilder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.ConfigurationBuilder$2" sourceFile="ConfigurationBuilder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.ConfigurationBuilder$DefaultConfiguration" sourceFile="ConfigurationBuilder.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Configurations" sourceFile="Configurations.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Configurations$1" sourceFile="Configurations.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Configurations$2" sourceFile="Configurations.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Configurations$3" sourceFile="Configurations.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.IsImmutable" sourceFile="IsImmutable.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.MutabilityReason" sourceFile="MutabilityReason.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.MutableReasonDetail" sourceFile="MutableReasonDetail.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.Reason" sourceFile="Reason.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.ThreadUnsafeAnalysisSession" sourceFile="ThreadUnsafeAnalysisSession.java" interface="false" size="58" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.asmoverride" total_bugs="0" total_types="3" total_size="26">
+      <ClassStats class="org.mutabilitydetector.asmoverride.AsmVerifierFactory" sourceFile="AsmVerifierFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.asmoverride.ClassLoadingVerifierFactory" sourceFile="ClassLoadingVerifierFactory.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.asmoverride.CustomClassLoadingSimpleVerifier" sourceFile="CustomClassLoadingSimpleVerifier.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.checkers" total_bugs="0" total_types="41" total_size="1049">
+      <ClassStats class="org.mutabilitydetector.checkers.AbstractMutabilityChecker" sourceFile="AbstractMutabilityChecker.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.AccessModifierQuery" sourceFile="AccessModifierQuery.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.AllChecksRunner" sourceFile="AllChecksRunner.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.ArrayFieldMutabilityChecker" sourceFile="ArrayFieldMutabilityChecker.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.AsmMutabilityChecker" sourceFile="AsmMutabilityChecker.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.AsmSessionCheckerRunner" sourceFile="AsmSessionCheckerRunner.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CanSubclassChecker" sourceFile="CanSubclassChecker.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CheckerResult" sourceFile="CheckerResult.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CheckerRunner" sourceFile="CheckerRunner.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CheckerRunner$ExceptionPolicy" sourceFile="CheckerRunner.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CheckerRunnerFactory" sourceFile="CheckerRunnerFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.ClassPathBasedCheckerRunnerFactory" sourceFile="ClassPathBasedCheckerRunnerFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionField" sourceFile="CollectionField.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionField$GenericCollection" sourceFile="CollectionField.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionField$GenericCollectionReader" sourceFile="CollectionField.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionField$GenericType" sourceFile="CollectionField.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionField$RawCollection" sourceFile="CollectionField.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionTypeWrappedInUnmodifiableIdiomChecker" sourceFile="CollectionTypeWrappedInUnmodifiableIdiomChecker.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionTypeWrappedInUnmodifiableIdiomChecker$CopyMethod" sourceFile="CollectionTypeWrappedInUnmodifiableIdiomChecker.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionTypeWrappedInUnmodifiableIdiomChecker$UnmodifiableWrapResult" sourceFile="CollectionTypeWrappedInUnmodifiableIdiomChecker.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionWithMutableElementTypeToFieldChecker" sourceFile="CollectionWithMutableElementTypeToFieldChecker.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.CollectionWithMutableElementTypeToFieldChecker$AssignCollectionToFieldVisitor" sourceFile="CollectionWithMutableElementTypeToFieldChecker.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.EscapedThisReferenceChecker" sourceFile="EscapedThisReferenceChecker.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.EscapedThisReferenceChecker$ThisEscapingFromConstructorVistor" sourceFile="EscapedThisReferenceChecker.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.FieldAssignmentVisitor" sourceFile="FieldAssignmentVisitor.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.InherentTypeMutabilityChecker" sourceFile="InherentTypeMutabilityChecker.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.JdkCollectionTypes" sourceFile="JdkCollectionTypes.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.MethodIs" sourceFile="MethodIs.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.MutabilityAnalysisException" sourceFile="MutabilityAnalysisException.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.MutabilityCheckerFactory" sourceFile="MutabilityCheckerFactory.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.MutableTypeToFieldChecker" sourceFile="MutableTypeToFieldChecker.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.MutableTypeToFieldChecker$AssignMutableTypeToFieldChecker" sourceFile="MutableTypeToFieldChecker.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.NonFinalFieldChecker" sourceFile="NonFinalFieldChecker.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.NullMutabilityChecker" sourceFile="NullMutabilityChecker.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.PublishedNonFinalFieldChecker" sourceFile="PublishedNonFinalFieldChecker.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.ResultCalculator" sourceFile="ResultCalculator.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.SetterMethodChecker" sourceFile="SetterMethodChecker.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.SetterMethodChecker$SetterAssignmentVisitor" sourceFile="SetterMethodChecker.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.UnhandledExceptionBuilder" sourceFile="UnhandledExceptionBuilder.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.VarStack" sourceFile="VarStack.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.VarStack$VarStackSnapshot" sourceFile="VarStack.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.checkers.info" total_bugs="0" total_types="11" total_size="189">
+      <ClassStats class="org.mutabilitydetector.checkers.info.AnalysisDatabase" sourceFile="AnalysisDatabase.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.AnalysisDatabase$InfoKey" sourceFile="AnalysisDatabase.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.AnalysisInformation" sourceFile="AnalysisInformation.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.InfoKeyException" sourceFile="InfoKeyException.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.MethodIdentifier" sourceFile="MethodIdentifier.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.MutableTypeInformation" sourceFile="MutableTypeInformation.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.MutableTypeInformation$KnownCircularReferences" sourceFile="MutableTypeInformation.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.MutableTypeInformation$MutabilityLookup" sourceFile="MutableTypeInformation.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.PrivateMethodInvocationInformation" sourceFile="PrivateMethodInvocationInformation.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.SessionCheckerRunner" sourceFile="SessionCheckerRunner.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.info.TypeStructureInformation" sourceFile="TypeStructureInformation.java" interface="false" size="24" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.checkers.util" total_bugs="0" total_types="4" total_size="79">
+      <ClassStats class="org.mutabilitydetector.checkers.util.PrivateMethodInvocationChecker" sourceFile="PrivateMethodInvocationChecker.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.util.PrivateMethodInvocationChecker$MethodInvocationVisitor" sourceFile="PrivateMethodInvocationChecker.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.util.StackPushingOpcodes" sourceFile="StackPushingOpcodes.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.checkers.util.TypeStructureInformationChecker" sourceFile="TypeStructureInformationChecker.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.classloading" total_bugs="0" total_types="4" total_size="30">
+      <ClassStats class="org.mutabilitydetector.classloading.AnalysisClassLoader" sourceFile="AnalysisClassLoader.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.classloading.CachingAnalysisClassLoader" sourceFile="CachingAnalysisClassLoader.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.classloading.CachingAnalysisClassLoader$1" sourceFile="CachingAnalysisClassLoader.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.classloading.ClassForNameWrapper" sourceFile="ClassForNameWrapper.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.cli" total_bugs="0" total_types="18" total_size="438">
+      <ClassStats class="org.mutabilitydetector.cli.BatchAnalysisOptions" sourceFile="BatchAnalysisOptions.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.BatchAnalysisSession" sourceFile="BatchAnalysisSession.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.ClassListException" sourceFile="ClassListException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.ClassListReaderFactory" sourceFile="ClassListReaderFactory.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.ClassListToReportCollector" sourceFile="ClassListToReportCollector.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.CommandLineOptions" sourceFile="CommandLineOptions.java" interface="false" size="157" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.CommandLineOptions$ParsingActionImplementation" sourceFile="CommandLineOptions.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.CommandLineOptions$ReportMode" sourceFile="CommandLineOptions.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.CommandLineOptionsException" sourceFile="CommandLineOptionsException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.NamesFromClassResources" sourceFile="NamesFromClassResources.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.OptionParserHelper" sourceFile="OptionParserHelper.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.ParsingAction" sourceFile="OptionParserHelper.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.PlainTextClassListToReportReader" sourceFile="PlainTextClassListToReportReader.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.RunMutabilityDetector" sourceFile="RunMutabilityDetector.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.RunMutabilityDetector$1" sourceFile="RunMutabilityDetector.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.SessionResultsFormatter" sourceFile="SessionResultsFormatter.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.SessionResultsFormatter$ClassnameComparator" sourceFile="SessionResultsFormatter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.cli.URLFallbackClassLoader" sourceFile="URLFallbackClassLoader.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.locations" total_bugs="0" total_types="18" total_size="254">
+      <ClassStats class="org.mutabilitydetector.locations.ClassIdentifier" sourceFile="ClassIdentifier.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassLocation" sourceFile="ClassLocation.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassName" sourceFile="ClassName.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter" sourceFile="ClassNameConverter.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$1" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$2" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$3" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$4" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$5" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$6" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.ClassNameConverter$7" sourceFile="ClassNameConverter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.CodeLocation" sourceFile="CodeLocation.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.CodeLocation$UnknownCodeLocation" sourceFile="CodeLocation.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.Dotted" sourceFile="Dotted.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.Dotted$1" sourceFile="Dotted.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.Dotted$2" sourceFile="Dotted.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.FieldLocation" sourceFile="FieldLocation.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.locations.Slashed" sourceFile="Slashed.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.unittesting" total_bugs="0" total_types="5" total_size="117">
+      <ClassStats class="org.mutabilitydetector.unittesting.AllowedReason" sourceFile="AllowedReason.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.MutabilityAssert" sourceFile="MutabilityAssert.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.MutabilityAsserter" sourceFile="MutabilityAsserter.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.MutabilityAssertionError" sourceFile="MutabilityAssertionError.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.MutabilityMatchers" sourceFile="MutabilityMatchers.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.unittesting.internal" total_bugs="0" total_types="2" total_size="23">
+      <ClassStats class="org.mutabilitydetector.unittesting.internal.AssertionReporter" sourceFile="AssertionReporter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.internal.ReasonsFormatter" sourceFile="ReasonsFormatter.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.unittesting.matchers" total_bugs="0" total_types="1" total_size="19">
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.IsImmutableMatcher" sourceFile="IsImmutableMatcher.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mutabilitydetector.unittesting.matchers.reasons" total_bugs="0" total_types="16" total_size="251">
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.AllowingForSubclassing" sourceFile="AllowingForSubclassing.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.AllowingNonFinalFields" sourceFile="AllowingNonFinalFields.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.AssumeCopiedIntoUnmodifiable" sourceFile="AssumeCopiedIntoUnmodifiable.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.AssumeCopiedIntoUnmodifiable$1" sourceFile="AssumeCopiedIntoUnmodifiable.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.BaseMutableReasonDetailMatcher" sourceFile="BaseMutableReasonDetailMatcher.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.FieldAssumptions" sourceFile="FieldAssumptions.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.FieldAssumptions$AssumeCopiedIntoUnmodifiable" sourceFile="FieldAssumptions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.FieldAssumptions$FieldLocationWithNameMatcher" sourceFile="FieldAssumptions.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.FieldAssumptions$FieldModifiedAsPartOfAnUnobservableCachingStrategy" sourceFile="FieldAssumptions.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.FieldAssumptions$MutableFieldNotModifiedAndDoesntEscapeMatcher" sourceFile="FieldAssumptions.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.NoReasonsAllowed" sourceFile="NoReasonsAllowed.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.ProvidedOtherClass" sourceFile="ProvidedOtherClass.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.ProvidedOtherClass$1" sourceFile="ProvidedOtherClass.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.ProvidedOtherClass$AllowedIfOtherClassIsGenericTypeOfCollectionField" sourceFile="ProvidedOtherClass.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.ProvidedOtherClass$AllowedIfOtherClassIsImmutable" sourceFile="ProvidedOtherClass.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mutabilitydetector.unittesting.matchers.reasons.WithAllowedReasonsMatcher" sourceFile="WithAllowedReasonsMatcher.java" interface="false" size="63" bugs="0"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1362515489000" release="" codeSize="5782" numClasses="288"/>
+  </History>
+</BugCollection>

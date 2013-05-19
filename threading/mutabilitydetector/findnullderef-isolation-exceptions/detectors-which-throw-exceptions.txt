@@ -1,0 +1,7 @@
+      At edu.umd.cs.findbugs.BytecodeScanningDetector.visitClassContext(BytecodeScanningDetector.java:37)
+      At edu.umd.cs.findbugs.detect.BuildNonnullReturnDatabase.visitClassContext(BuildNonnullReturnDatabase.java:65)
+      At edu.umd.cs.findbugs.detect.BuildUnconditionalParamDerefDatabase.visitClassContext(BuildUnconditionalParamDerefDatabase.java:91)
+      At edu.umd.cs.findbugs.detect.FindNullDeref.visitClassContext(FindNullDeref.java:205)
+      At edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue.visitClassContext(FindUseOfNonSerializableValue.java:89)
+      At edu.umd.cs.findbugs.detect.LoadOfKnownNullValue.visitClassContext(LoadOfKnownNullValue.java:52)
+      At edu.umd.cs.findbugs.DetectorToDetector2Adapter.visitClass(DetectorToDetector2Adapter.java:74)
